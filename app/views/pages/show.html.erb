@@ -1,0 +1,7 @@
+<div id="text">
+  <%= RedCloth.new(@page.content).to_html %>
+<% if authorized? %>
+<%= link_to 'Edit', edit_page_path(@page) %> |
+<%= link_to 'Back', pages_path %>
+<% end %>
+</div>

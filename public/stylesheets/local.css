@@ -1,0 +1,42 @@
+span.hover {
+		background-color:  #DDBB99;
+		}
+span.head {
+  background-color: red;
+}
+
+span.tail {
+  background-color: green;
+}
+
+code.relation {
+cursor: pointer;
+font-family: monaco, sans-serif;
+}
+
+pre.help {
+cursor: pointer;
+font-family:  calibri, monaco, sans-serif;
+}
+
+span.word {
+cursor: pointer;
+position: relative; 
+border: 1px hidden black;
+}
+
+
+span#flasherror, div.errorExplanation, h2.errorExplanation {
+	font-family: monaco, sans-serif;
+	background-color: white;
+	color: #874C3B;
+}
+
+span#flashnotice {
+	font-family: monaco, sans-serif;
+	background-color: white;
+	color: #3b7687;
+
+}
+
+

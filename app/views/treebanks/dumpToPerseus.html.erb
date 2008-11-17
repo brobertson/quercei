@@ -1,0 +1,38 @@
+<h1>Listing treebanks</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Word</th>
+    <th>Word form</th>
+    <th>Sentence</th>
+    <th>Head</th>
+    <th>Head form</th>
+    <th>Relation</th>
+    <th>Postag</th>
+    <th>Lemma</th>
+    <th>User</th>
+  </tr>
+
+<% for treebank in @treebanks %>
+  <tr>
+    <td><%=h treebank.id %></td>
+    <td><%=h treebank.word_id %></td>
+    <td><%=h treebank.word.form %></td>
+    <td><%=h treebank.sentence %></td>
+    <td><%=h treebank.head_id %></td>
+    <td><%=h treebank.head_word.form %></td>
+    <td><%=h treebank.relation %></td>
+    <td><%=h treebank.postag %></td>
+    <td><%=h treebank.lemma %></td>
+    <td><%=h treebank.user_id %></td>
+    <td><%= link_to 'Show', treebank %></td>
+    <td><%= link_to 'Edit', edit_treebank_path(treebank) %></td>
+    <td><%= link_to 'Destroy', treebank, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+ <%= will_paginate @treebanks %>
+<br />
+
+<%= link_to 'New treebank', new_treebank_path %>

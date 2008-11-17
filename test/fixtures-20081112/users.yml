@@ -1,0 +1,11 @@
+--- 
+users_001: 
+  salt: 22e19358a8a093baa71ccdb3da820a7ace7faa1e
+  updated_at: 2008-10-10 19:07:15
+  crypted_password: 4075063d5aaa80bea0cb881aa1db66c5d659cbd7
+  remember_token_expires_at: 
+  id: "1"
+  remember_token: 
+  login: brucerob
+  email: brobertson@mta.ca
+  created_at: 2008-10-10 19:07:15

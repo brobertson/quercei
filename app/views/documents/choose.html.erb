@@ -1,0 +1,12 @@
+<h2>Select Text To Edit</h2>
+<form action="/sentence" method="get">
+<input type="hidden" id="sentence" name="sentence" value="1"/> 
+<select name="document_urn">
+<% for document in @documents %>
+     <option value="<%= document.urn%>"><%= document.author %>, <%=h document.title %></option>
+<% end %>
+</select>
+<input type="submit" value="Go"/>
+</form>
+<br/>
+<br/>

@@ -1,0 +1,10 @@
+<% for treebank in @sentenceTree %>
+    <!-- Treebank record id: <%=h treebank.id %>
+    word id: <%=h treebank.word_id %></td>
+    <%=h treebank.postag %></td>
+    <%=h treebank.lemma %></td>
+   -->  
+<code class="relation" onmouseover="$('<%=h treebank.word_id %>').className = 'tail'; $('<%=h treebank.head_id %>').className = 'head';" onmouseout="$('<%=h treebank.word_id %>').className = 'word'; $('<%=h treebank.head_id %>').className = 'word';"  ><%=h treebank.word.form %>  <%=h treebank.relation %> → <%=h treebank.head_word.form %></code><br/>
+<% end %>
+
+

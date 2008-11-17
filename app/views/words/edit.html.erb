@@ -1,0 +1,32 @@
+<h1>Editing word</h1>
+
+<% form_for(@word) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </p>
+  <p>
+    <%= f.label :form %><br />
+    <%= f.text_field :form %>
+  </p>
+  <p>
+    <%= f.label :sentence %><br />
+    <%= f.text_field :sentence %>
+  </p>
+  <p>
+    <%= f.label :document_urn %><br />
+    <%= f.text_field :document_urn %>
+  </p>
+  <p>
+    <%= f.label :document_span %><br />
+    <%= f.text_field :document_span %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @word %> |
+<%= link_to 'Back', words_path %>

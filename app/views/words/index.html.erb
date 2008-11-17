@@ -1,0 +1,33 @@
+<h1>Listing words</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Number</th>
+    <th>Form</th>
+    <th>Sentence</th>
+    <th>Document urn</th>
+    <th>Span</th>
+    <th>Subdoc</th>
+  </tr>
+
+<% for word in @words %>
+  <tr>
+   <td><%=h word.id %></td>
+    <td><%=h word.number %></td>
+    <td><%=h word.form %></td>
+    <td><%=h word.sentence %></td>
+    <td><%=h word.document_urn %></td>
+    <td><%=h word.span %></td>
+    <td><%=h word.subdoc %></td>
+    <td><%= link_to 'Show', word %></td>
+    <td><%= link_to 'Edit', edit_word_path(word) %></td>
+    <td><%= link_to 'Destroy', word, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+ <%= will_paginate @words %>
+
+<br />
+
+<%= link_to 'New word', new_word_path %>

@@ -1,0 +1,51 @@
+--- 
+pages_001: 
+  name: Contact
+  permalink: contact
+  updated_at: 2008-11-11 13:48:08
+  id: "7"
+  content: |-
+    Prof. Bruce Robertson <br/>
+    Dept. of Classics, Mount Allison University<br/>
+    #414, Hart Hall <br/>
+    63D York St.<br/>
+    Sackville, NB<br/>
+    E4L 3C8 Canada <br/>
+    telephone: 506-364-2695 <br/>
+    email: <a href="mailto:brobertson@mta.ca">brobertson@mta.ca</a><br/>
+  created_at: 2008-11-11 13:46:51
+pages_002: 
+  name: Development
+  permalink: development
+  updated_at: 2008-11-11 15:11:24
+  id: "8"
+  content: |-
+    
+    
+    h2. Overview
+    
+    h3. Data Model
+    
+    _Querci_ uses the "Ruby on Rails":http://www.rubyonrails.org/ web application development framework and is based on three data models: Documents, Words and Treebanks[1]. The 'document "database":/documents merely associates the document URN with an author and title. The "'words' database":/words identifies each word by document urn, sentence number within that document, and sequential number within the sentence, following the system used by the Perseus Project in its XML schema. It also provides the word's form.
+    
+    The above two databases contain 'canonical' data, not user-generated data. The words and documents are therefore loaded into _Querci_ before the readers start their task of defining the syntactic relationships between the words in each sentence. In order to avoid having to deal with the database
+     directly, _Querci_ exploits a Rails means of loading data that is indifferent to the underlying database. Rails' powerful migration feature uses "yaml":http://www.yaml.org/ files to serialize database records. We provide a xslt file that transforms documents conforming to the Perseus 
+    Project's  treebank "XML schema":http://nlp.perseus.tufts.edu/syntax/treebank/1.5/data/treebank-1.5.xsd into yaml files conforming to the 'words' database in _Querci._ The resulting @words.yml@ file is installed under @querci/test/fixtures/word.yml@ and once the command @rake db:fixtures:
+    load TABLES=words@ is run, the word database will be loaded. 
+    
+    The (poorly-named) 'treebanks' database stores the information provided by readers. user's model of the grammar and sytanx of the sentence. Each 'treebank' row of this database includes the id of the user who asserts the association, the word being defined, its relation to a headword, and the database id of the headword. (There are database columns available to store the grammatical definition of the word in the compact form used in the Perseus schema, but the grammatical identification part of this project has been left undone because it is was considered easier than the graphical syntactic editor.)
+    
+    h3. User Interface
+    
+    It would be possible to require users to enter data into the Treebanks database using a web form, but this would be not much more helpful to them  than hand-editing
+    
+    h3. Additional Requirements
+    
+    h3. Local Configuration
+    
+    
+    # The set of tags available in the drop-down menu are stored in the @tagset@ variable at the top of the @querci/app/controllers/sentence_controller.rb@ file. 
+    # The location of the @dot@ program must be indicated in the variable @dotcommand@ found in the @querci/app/controllers/treebank_controller.rb@ file.
+    
+    fn1. The application also includes the Users and Sessions models required by the "restful authentication":http://agilewebdevelopment.com/plugins/restful_authentication plugin. Finally, some of the documentation is stored in a Pages model using the "textile":http://hobix.com/textile/ markup language.
+  created_at: 2008-11-11 13:52:37

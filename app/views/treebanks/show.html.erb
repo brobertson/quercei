@@ -1,0 +1,38 @@
+<p>
+  <b>Word:</b>
+  <%=h @treebank.word_id %>
+</p>
+
+<p>
+  <b>Word form:</b>
+  <%=h @treebank.word_form %>
+</p>
+
+<p>
+  <b>Head:</b>
+  <%=h @treebank.head_id %>
+</p>
+
+<p>
+  <b>Relation:</b>
+  <%=h @treebank.relation %>
+</p>
+
+<p>
+  <b>Postag:</b>
+  <%=h @treebank.postag %>
+</p>
+
+<p>
+  <b>Lemma:</b>
+  <%=h @treebank.lemma %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @treebank.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_treebank_path(@treebank) %> |
+<%= link_to 'Back', treebanks_path %>

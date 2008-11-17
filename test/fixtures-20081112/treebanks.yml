@@ -1,0 +1,2497 @@
+--- 
+treebanks_185: 
+  updated_at: 2008-11-06 20:06:51
+  id: "576"
+  relation: SBJ
+  postag: 
+  word_form: 
+  sentence: "4"
+  head_id: "224291550"
+  lemma: 
+  user_id: "1"
+  word_id: "224291555"
+  created_at: 2008-11-06 20:06:51
+treebanks_157: 
+  updated_at: 2008-11-03 00:29:21
+  id: "527"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "17"
+  head_id: "558414852"
+  lemma: 
+  user_id: "1"
+  word_id: "198732520"
+  created_at: 2008-11-03 00:29:21
+treebanks_129: 
+  updated_at: 2008-10-20 02:36:57
+  id: "480"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "11"
+  head_id: "215704232"
+  lemma: 
+  user_id: "1"
+  word_id: "215704231"
+  created_at: 2008-10-20 02:36:57
+treebanks_043: 
+  updated_at: 2008-10-18 03:13:08
+  id: "146"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "65"
+  head_id: "728109870"
+  lemma: 
+  user_id: "1"
+  word_id: "728109869"
+  created_at: 2008-10-18 03:13:08
+treebanks_015: 
+  updated_at: 2008-10-18 00:46:59
+  id: "94"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "65"
+  head_id: "728042218"
+  lemma: 
+  user_id: "1"
+  word_id: "728042219"
+  created_at: 2008-10-18 00:46:59
+treebanks_071: 
+  updated_at: 2008-10-19 01:39:03
+  id: "353"
+  relation: ExD
+  postag: 
+  word_form: 
+  sentence: "5"
+  head_id: "669105702"
+  lemma: 
+  user_id: "1"
+  word_id: "224156260"
+  created_at: 2008-10-19 01:39:03
+treebanks_186: 
+  updated_at: 2008-11-06 20:07:00
+  id: "577"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "4"
+  head_id: "224291550"
+  lemma: 
+  user_id: "1"
+  word_id: "224291551"
+  created_at: 2008-11-06 20:07:00
+treebanks_158: 
+  updated_at: 2008-11-03 00:29:30
+  id: "528"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "17"
+  head_id: "198732520"
+  lemma: 
+  user_id: "1"
+  word_id: "198732521"
+  created_at: 2008-11-03 00:29:30
+treebanks_044: 
+  updated_at: 2008-10-18 03:13:20
+  id: "147"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "65"
+  head_id: "728109869"
+  lemma: 
+  user_id: "1"
+  word_id: "728177511"
+  created_at: 2008-10-18 03:13:20
+treebanks_016: 
+  updated_at: 2008-10-18 00:56:54
+  id: "98"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "63"
+  head_id: "727771622"
+  lemma: 
+  user_id: "1"
+  word_id: "727771621"
+  created_at: 2008-10-18 00:56:54
+treebanks_072: 
+  updated_at: 2008-10-20 01:16:18
+  id: "410"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "9"
+  head_id: "669105698"
+  lemma: 
+  user_id: "1"
+  word_id: "223750361"
+  created_at: 2008-10-20 01:16:18
+treebanks_187: 
+  updated_at: 2008-11-06 20:07:12
+  id: "578"
+  relation: ATR
+  postag: 
+  word_form: 
+  sentence: "4"
+  head_id: "224291550"
+  lemma: 
+  user_id: "1"
+  word_id: "224291554"
+  created_at: 2008-11-06 20:07:12
+treebanks_159: 
+  updated_at: 2008-11-03 00:29:34
+  id: "529"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "17"
+  head_id: "198732521"
+  lemma: 
+  user_id: "1"
+  word_id: "198732522"
+  created_at: 2008-11-03 00:29:34
+treebanks_045: 
+  updated_at: 2008-10-18 03:13:32
+  id: "148"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "65"
+  head_id: "728109865"
+  lemma: 
+  user_id: "1"
+  word_id: "728109863"
+  created_at: 2008-10-18 03:13:32
+treebanks_100: 
+  updated_at: 2008-10-20 01:55:00
+  id: "438"
+  relation: OCOMP
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "224020959"
+  lemma: 
+  user_id: "1"
+  word_id: "224020958"
+  created_at: 2008-10-20 01:55:00
+treebanks_017: 
+  updated_at: 2008-10-18 00:57:05
+  id: "99"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "63"
+  head_id: "727839273"
+  lemma: 
+  user_id: "1"
+  word_id: "727839272"
+  created_at: 2008-10-18 00:57:05
+treebanks_073: 
+  updated_at: 2008-10-20 01:16:43
+  id: "411"
+  relation: SBJ
+  postag: 
+  word_form: 
+  sentence: "9"
+  head_id: "223750361"
+  lemma: 
+  user_id: "1"
+  word_id: "223750364"
+  created_at: 2008-10-20 01:16:43
+treebanks_188: 
+  updated_at: 2008-11-06 20:07:17
+  id: "579"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "4"
+  head_id: "224291554"
+  lemma: 
+  user_id: "1"
+  word_id: "224291553"
+  created_at: 2008-11-06 20:07:17
+treebanks_046: 
+  updated_at: 2008-10-18 03:13:38
+  id: "149"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "65"
+  head_id: "728177511"
+  lemma: 
+  user_id: "1"
+  word_id: "728109865"
+  created_at: 2008-10-18 03:13:38
+treebanks_101: 
+  updated_at: 2008-10-20 01:59:02
+  id: "439"
+  relation: SBJ
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "224020961"
+  lemma: 
+  user_id: "1"
+  word_id: "224020962"
+  created_at: 2008-10-20 01:55:17
+treebanks_018: 
+  updated_at: 2008-10-18 00:57:11
+  id: "100"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "63"
+  head_id: "727906916"
+  lemma: 
+  user_id: "1"
+  word_id: "727906915"
+  created_at: 2008-10-18 00:57:11
+treebanks_074: 
+  updated_at: 2008-10-20 01:20:22
+  id: "412"
+  relation: ATR
+  postag: 
+  word_form: 
+  sentence: "9"
+  head_id: "223750360"
+  lemma: 
+  user_id: "1"
+  word_id: "223750362"
+  created_at: 2008-10-20 01:17:22
+treebanks_189: 
+  updated_at: 2008-11-06 20:42:19
+  id: "580"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "71"
+  head_id: "558820739"
+  lemma: 
+  user_id: "1"
+  word_id: "745216871"
+  created_at: 2008-11-06 20:42:19
+treebanks_130: 
+  updated_at: 2008-10-23 03:42:26
+  id: "481"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "15"
+  head_id: "558414850"
+  lemma: 
+  user_id: "1"
+  word_id: "206778654"
+  created_at: 2008-10-23 03:38:45
+treebanks_047: 
+  updated_at: 2008-10-18 03:14:13
+  id: "150"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "65"
+  head_id: "728109862"
+  lemma: 
+  user_id: "1"
+  word_id: "728109863"
+  created_at: 2008-10-18 03:14:13
+treebanks_102: 
+  updated_at: 2008-10-20 01:58:51
+  id: "440"
+  relation: ATR
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "224020959"
+  lemma: 
+  user_id: "1"
+  word_id: "224020961"
+  created_at: 2008-10-20 01:58:51
+treebanks_019: 
+  updated_at: 2008-10-18 00:57:15
+  id: "101"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "63"
+  head_id: "727906918"
+  lemma: 
+  user_id: "1"
+  word_id: "727906919"
+  created_at: 2008-10-18 00:57:15
+treebanks_075: 
+  updated_at: 2008-10-20 01:17:33
+  id: "413"
+  relation: ADV
+  postag: 
+  word_form: 
+  sentence: "9"
+  head_id: "223750361"
+  lemma: 
+  user_id: "1"
+  word_id: "223750363"
+  created_at: 2008-10-20 01:17:33
+treebanks_131: 
+  updated_at: 2008-10-23 03:46:48
+  id: "484"
+  relation: SBJ
+  postag: 
+  word_form: 
+  sentence: "3"
+  head_id: "669105704"
+  lemma: 
+  user_id: "1"
+  word_id: "18704249"
+  created_at: 2008-10-23 03:46:48
+treebanks_103: 
+  updated_at: 2008-10-20 01:59:28
+  id: "441"
+  relation: ADV
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "224020961"
+  lemma: 
+  user_id: "1"
+  word_id: "224088605"
+  created_at: 2008-10-20 01:59:28
+treebanks_076: 
+  updated_at: 2008-10-20 01:19:05
+  id: "414"
+  relation: COORD
+  postag: 
+  word_form: 
+  sentence: "9"
+  head_id: "223750361"
+  lemma: 
+  user_id: "1"
+  word_id: "223750358"
+  created_at: 2008-10-20 01:17:57
+treebanks_048: 
+  updated_at: 2008-10-18 03:14:17
+  id: "151"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "65"
+  head_id: "728042220"
+  lemma: 
+  user_id: "1"
+  word_id: "728109862"
+  created_at: 2008-10-18 03:14:17
+treebanks_160: 
+  updated_at: 2008-11-03 00:30:18
+  id: "530"
+  relation: AuxC
+  postag: 
+  word_form: 
+  sentence: "17"
+  head_id: "198732520"
+  lemma: 
+  user_id: "1"
+  word_id: "198732518"
+  created_at: 2008-11-03 00:30:18
+treebanks_132: 
+  updated_at: 2008-10-23 03:48:24
+  id: "485"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "2"
+  head_id: "669105705"
+  lemma: 
+  user_id: "1"
+  word_id: "18501299"
+  created_at: 2008-10-23 03:48:24
+treebanks_104: 
+  updated_at: 2008-10-20 01:59:37
+  id: "442"
+  relation: ATR
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "224088605"
+  lemma: 
+  user_id: "1"
+  word_id: "224088606"
+  created_at: 2008-10-20 01:59:37
+treebanks_077: 
+  updated_at: 2008-10-20 01:19:22
+  id: "415"
+  relation: OBJ_CO
+  postag: 
+  word_form: 
+  sentence: "9"
+  head_id: "223750358"
+  lemma: 
+  user_id: "1"
+  word_id: "223750359"
+  created_at: 2008-10-20 01:19:22
+treebanks_049: 
+  updated_at: 2008-10-18 03:15:25
+  id: "152"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "64"
+  head_id: "727974565"
+  lemma: 
+  user_id: "1"
+  word_id: "727974566"
+  created_at: 2008-10-18 03:15:25
+treebanks_161: 
+  updated_at: 2008-11-03 00:30:49
+  id: "531"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "17"
+  head_id: "198732518"
+  lemma: 
+  user_id: "1"
+  word_id: "198597228"
+  created_at: 2008-11-03 00:30:49
+treebanks_133: 
+  updated_at: 2008-10-23 11:20:55
+  id: "486"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "3"
+  head_id: "18704249"
+  lemma: 
+  user_id: "1"
+  word_id: "18704248"
+  created_at: 2008-10-23 11:20:55
+treebanks_078: 
+  updated_at: 2008-10-20 01:19:26
+  id: "416"
+  relation: OBJ_CO
+  postag: 
+  word_form: 
+  sentence: "9"
+  head_id: "223750358"
+  lemma: 
+  user_id: "1"
+  word_id: "215839527"
+  created_at: 2008-10-20 01:19:26
+treebanks_105: 
+  updated_at: 2008-10-20 01:59:53
+  id: "443"
+  relation: AuxP
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "224020961"
+  lemma: 
+  user_id: "1"
+  word_id: "224088604"
+  created_at: 2008-10-20 01:59:53
+treebanks_190: 
+  updated_at: 2008-11-06 20:45:56
+  id: "581"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "70"
+  head_id: "558820738"
+  lemma: 
+  user_id: "1"
+  word_id: "744946274"
+  created_at: 2008-11-06 20:45:33
+treebanks_162: 
+  updated_at: 2008-11-03 00:31:07
+  id: "532"
+  relation: SBJ
+  postag: 
+  word_form: 
+  sentence: "17"
+  head_id: "198597228"
+  lemma: 
+  user_id: "1"
+  word_id: "198664876"
+  created_at: 2008-11-03 00:31:07
+treebanks_134: 
+  updated_at: 2008-10-23 11:21:30
+  id: "487"
+  relation: ADV
+  postag: 
+  word_form: 
+  sentence: "3"
+  head_id: "18704248"
+  lemma: 
+  user_id: "1"
+  word_id: "18704245"
+  created_at: 2008-10-23 11:21:30
+treebanks_020: 
+  updated_at: 2008-10-18 00:57:24
+  id: "102"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "63"
+  head_id: "727906915"
+  lemma: 
+  user_id: "1"
+  word_id: "727906919"
+  created_at: 2008-10-18 00:57:24
+treebanks_079: 
+  updated_at: 2008-10-20 01:20:11
+  id: "417"
+  relation: SBJ
+  postag: 
+  word_form: 
+  sentence: "9"
+  head_id: "223750359"
+  lemma: 
+  user_id: "1"
+  word_id: "223750360"
+  created_at: 2008-10-20 01:20:11
+treebanks_106: 
+  updated_at: 2008-10-20 02:00:13
+  id: "444"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "224088604"
+  lemma: 
+  user_id: "1"
+  word_id: "224088602"
+  created_at: 2008-10-20 02:00:12
+treebanks_191: 
+  updated_at: 2008-11-06 20:46:02
+  id: "582"
+  relation: SBJ
+  postag: 
+  word_form: 
+  sentence: "70"
+  head_id: "744946274"
+  lemma: 
+  user_id: "1"
+  word_id: "744946271"
+  created_at: 2008-11-06 20:46:02
+treebanks_163: 
+  updated_at: 2008-11-03 00:33:11
+  id: "533"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "18"
+  head_id: "198597221"
+  lemma: 
+  user_id: "1"
+  word_id: "198597224"
+  created_at: 2008-11-03 00:33:11
+treebanks_135: 
+  updated_at: 2008-10-23 11:30:22
+  id: "489"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "18"
+  head_id: "558414853"
+  lemma: 
+  user_id: "1"
+  word_id: "198597221"
+  created_at: 2008-10-23 11:30:22
+treebanks_021: 
+  updated_at: 2008-10-18 00:57:36
+  id: "103"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "63"
+  head_id: "727839272"
+  lemma: 
+  user_id: "1"
+  word_id: "727906919"
+  created_at: 2008-10-18 00:57:36
+treebanks_107: 
+  updated_at: 2008-10-20 02:00:30
+  id: "445"
+  relation: ATR
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "224088602"
+  lemma: 
+  user_id: "1"
+  word_id: "224088603"
+  created_at: 2008-10-20 02:00:30
+treebanks_192: 
+  updated_at: 2008-11-06 20:46:25
+  id: "583"
+  relation: AuxV
+  postag: 
+  word_form: 
+  sentence: "70"
+  head_id: "744946274"
+  lemma: 
+  user_id: "1"
+  word_id: "744946275"
+  created_at: 2008-11-06 20:46:25
+treebanks_164: 
+  updated_at: 2008-11-03 00:33:18
+  id: "534"
+  relation: ATR
+  postag: 
+  word_form: 
+  sentence: "18"
+  head_id: "198597221"
+  lemma: 
+  user_id: "1"
+  word_id: "198597223"
+  created_at: 2008-11-03 00:33:18
+treebanks_136: 
+  updated_at: 2008-10-23 11:30:55
+  id: "490"
+  relation: SBJ
+  postag: 
+  word_form: 
+  sentence: "16"
+  head_id: "206711008"
+  lemma: 
+  user_id: "1"
+  word_id: "206778652"
+  created_at: 2008-10-23 11:30:55
+treebanks_022: 
+  updated_at: 2008-10-18 00:57:57
+  id: "104"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "63"
+  head_id: "727839275"
+  lemma: 
+  user_id: "1"
+  word_id: "727906919"
+  created_at: 2008-10-18 00:57:57
+treebanks_108: 
+  updated_at: 2008-10-20 02:15:51
+  id: "456"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "10"
+  head_id: "558414844"
+  lemma: 
+  user_id: "1"
+  word_id: "215839522"
+  created_at: 2008-10-20 02:15:51
+treebanks_050: 
+  updated_at: 2008-10-18 03:15:32
+  id: "153"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "64"
+  head_id: "727974566"
+  lemma: 
+  user_id: "1"
+  word_id: "727974564"
+  created_at: 2008-10-18 03:15:32
+treebanks_193: 
+  updated_at: 2008-11-07 01:46:40
+  id: "584"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "8"
+  head_id: "223953305"
+  lemma: 
+  user_id: "1"
+  word_id: "223953304"
+  created_at: 2008-11-07 01:46:40
+treebanks_165: 
+  updated_at: 2008-11-03 00:33:24
+  id: "535"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "18"
+  head_id: "198597223"
+  lemma: 
+  user_id: "1"
+  word_id: "198597222"
+  created_at: 2008-11-03 00:33:24
+treebanks_137: 
+  updated_at: 2008-10-23 11:31:03
+  id: "491"
+  relation: SBJ
+  postag: 
+  word_form: 
+  sentence: "16"
+  head_id: "558414851"
+  lemma: 
+  user_id: "1"
+  word_id: "206711008"
+  created_at: 2008-10-23 11:31:03
+treebanks_023: 
+  updated_at: 2008-10-18 00:58:25
+  id: "105"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "63"
+  head_id: "727771619"
+  lemma: 
+  user_id: "1"
+  word_id: "727771620"
+  created_at: 2008-10-18 00:58:25
+treebanks_109: 
+  updated_at: 2008-10-20 02:16:16
+  id: "457"
+  relation: ADV
+  postag: 
+  word_form: 
+  sentence: "10"
+  head_id: "215839524"
+  lemma: 
+  user_id: "1"
+  word_id: "215839523"
+  created_at: 2008-10-20 02:16:00
+treebanks_051: 
+  updated_at: 2008-10-18 03:15:50
+  id: "154"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "64"
+  head_id: "727906923"
+  lemma: 
+  user_id: "1"
+  word_id: "727906924"
+  created_at: 2008-10-18 03:15:50
+treebanks_194: 
+  updated_at: 2008-11-08 14:07:17
+  id: "585"
+  relation: ATR
+  postag: 
+  word_form: 
+  sentence: "71"
+  head_id: "745013918"
+  lemma: 
+  user_id: "1"
+  word_id: "744946278"
+  created_at: 2008-11-08 14:07:17
+treebanks_166: 
+  updated_at: 2008-11-03 00:58:46
+  id: "536"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "21"
+  head_id: "558482494"
+  lemma: 
+  user_id: "1"
+  word_id: "190145201"
+  created_at: 2008-11-03 00:58:46
+treebanks_138: 
+  updated_at: 2008-11-02 20:35:02
+  id: "504"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "14"
+  head_id: "558414849"
+  lemma: 
+  user_id: "1"
+  word_id: "206846301"
+  created_at: 2008-11-02 20:35:02
+treebanks_024: 
+  updated_at: 2008-10-18 00:58:33
+  id: "106"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "63"
+  head_id: "727771620"
+  lemma: 
+  user_id: "1"
+  word_id: "727771623"
+  created_at: 2008-10-18 00:58:33
+treebanks_080: 
+  updated_at: 2008-10-20 01:20:54
+  id: "418"
+  relation: SBJ
+  postag: 
+  word_form: 
+  sentence: "9"
+  head_id: "215839527"
+  lemma: 
+  user_id: "1"
+  word_id: "223750357"
+  created_at: 2008-10-20 01:20:54
+treebanks_052: 
+  updated_at: 2008-10-18 03:15:54
+  id: "155"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "64"
+  head_id: "727906920"
+  lemma: 
+  user_id: "1"
+  word_id: "727906922"
+  created_at: 2008-10-18 03:15:54
+treebanks_195: 
+  updated_at: 2008-11-08 14:09:58
+  id: "586"
+  relation: ADV
+  postag: 
+  word_form: 
+  sentence: "71"
+  head_id: "745216871"
+  lemma: 
+  user_id: "1"
+  word_id: "745013918"
+  created_at: 2008-11-08 14:09:58
+treebanks_167: 
+  updated_at: 2008-11-03 00:58:52
+  id: "537"
+  relation: SBJ
+  postag: 
+  word_form: 
+  sentence: "21"
+  head_id: "190145201"
+  lemma: 
+  user_id: "1"
+  word_id: "190212841"
+  created_at: 2008-11-03 00:58:52
+treebanks_139: 
+  updated_at: 2008-11-02 20:35:10
+  id: "505"
+  relation: SBJ
+  postag: 
+  word_form: 
+  sentence: "14"
+  head_id: "206846301"
+  lemma: 
+  user_id: "1"
+  word_id: "206913959"
+  created_at: 2008-11-02 20:35:10
+treebanks_025: 
+  updated_at: 2008-10-18 00:58:39
+  id: "107"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "63"
+  head_id: "727771621"
+  lemma: 
+  user_id: "1"
+  word_id: "727771623"
+  created_at: 2008-10-18 00:58:39
+treebanks_081: 
+  updated_at: 2008-10-20 01:21:14
+  id: "419"
+  relation: AuxP
+  postag: 
+  word_form: 
+  sentence: "9"
+  head_id: "215839527"
+  lemma: 
+  user_id: "1"
+  word_id: "215839530"
+  created_at: 2008-10-20 01:21:14
+treebanks_053: 
+  updated_at: 2008-10-18 03:16:03
+  id: "156"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "64"
+  head_id: "727974572"
+  lemma: 
+  user_id: "1"
+  word_id: "727974573"
+  created_at: 2008-10-18 03:16:03
+treebanks_196: 
+  updated_at: 2008-11-08 14:49:32
+  id: "587"
+  relation: ADV
+  postag: 
+  word_form: 
+  sentence: "71"
+  head_id: "745081568"
+  lemma: 
+  user_id: "1"
+  word_id: "745081569"
+  created_at: 2008-11-08 14:49:32
+treebanks_168: 
+  updated_at: 2008-11-03 00:59:00
+  id: "538"
+  relation: ATR
+  postag: 
+  word_form: 
+  sentence: "21"
+  head_id: "190145201"
+  lemma: 
+  user_id: "1"
+  word_id: "190212844"
+  created_at: 2008-11-03 00:59:00
+treebanks_026: 
+  updated_at: 2008-10-18 00:58:55
+  id: "108"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "63"
+  head_id: "727703975"
+  lemma: 
+  user_id: "1"
+  word_id: "727703976"
+  created_at: 2008-10-18 00:58:55
+treebanks_082: 
+  updated_at: 2008-10-20 01:21:24
+  id: "420"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "9"
+  head_id: "215839530"
+  lemma: 
+  user_id: "1"
+  word_id: "215839528"
+  created_at: 2008-10-20 01:21:24
+treebanks_054: 
+  updated_at: 2008-10-18 03:16:05
+  id: "157"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "64"
+  head_id: "727974571"
+  lemma: 
+  user_id: "1"
+  word_id: "727974570"
+  created_at: 2008-10-18 03:16:05
+treebanks_197: 
+  updated_at: 2008-11-08 17:43:45
+  id: "588"
+  relation: ATR
+  postag: 
+  word_form: 
+  sentence: "69"
+  head_id: "744878621"
+  lemma: 
+  user_id: "1"
+  word_id: "744878622"
+  created_at: 2008-11-08 17:43:45
+treebanks_169: 
+  updated_at: 2008-11-03 00:59:07
+  id: "539"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "21"
+  head_id: "190212844"
+  lemma: 
+  user_id: "1"
+  word_id: "190212842"
+  created_at: 2008-11-03 00:59:07
+treebanks_083: 
+  updated_at: 2008-10-20 01:21:35
+  id: "421"
+  relation: ATR
+  postag: 
+  word_form: 
+  sentence: "9"
+  head_id: "215839528"
+  lemma: 
+  user_id: "1"
+  word_id: "215839529"
+  created_at: 2008-10-20 01:21:35
+treebanks_055: 
+  updated_at: 2008-10-18 03:16:24
+  id: "158"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "64"
+  head_id: "727906922"
+  lemma: 
+  user_id: "1"
+  word_id: "728042213"
+  created_at: 2008-10-18 03:16:24
+treebanks_110: 
+  updated_at: 2008-10-20 02:16:28
+  id: "458"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "10"
+  head_id: "215839522"
+  lemma: 
+  user_id: "1"
+  word_id: "215839524"
+  created_at: 2008-10-20 02:16:28
+treebanks_027: 
+  updated_at: 2008-10-18 00:59:11
+  id: "109"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "63"
+  head_id: "727703974"
+  lemma: 
+  user_id: "1"
+  word_id: "727703975"
+  created_at: 2008-10-18 00:59:11
+treebanks_198: 
+  updated_at: 2008-11-09 01:00:48
+  id: "589"
+  relation: AuxV
+  postag: 
+  word_form: 
+  sentence: "15"
+  head_id: "206778654"
+  lemma: 
+  user_id: "1"
+  word_id: "206778653"
+  created_at: 2008-11-09 01:00:48
+treebanks_084: 
+  updated_at: 2008-10-20 01:53:26
+  id: "422"
+  relation: COORD
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "224088607"
+  lemma: 
+  user_id: "1"
+  word_id: "224088608"
+  created_at: 2008-10-20 01:47:49
+treebanks_056: 
+  updated_at: 2008-10-18 03:16:43
+  id: "159"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "64"
+  head_id: "727906924"
+  lemma: 
+  user_id: "1"
+  word_id: "728042213"
+  created_at: 2008-10-18 03:16:43
+treebanks_111: 
+  updated_at: 2008-10-20 02:16:35
+  id: "459"
+  relation: ADV
+  postag: 
+  word_form: 
+  sentence: "10"
+  head_id: "215839522"
+  lemma: 
+  user_id: "1"
+  word_id: "215839525"
+  created_at: 2008-10-20 02:16:35
+treebanks_028: 
+  updated_at: 2008-10-18 00:59:16
+  id: "110"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "63"
+  head_id: "727703974"
+  lemma: 
+  user_id: "1"
+  word_id: "727703976"
+  created_at: 2008-10-18 00:59:16
+treebanks_199: 
+  updated_at: 2008-11-09 03:57:59
+  id: "624"
+  relation: SBJ
+  postag: 
+  word_form: 
+  sentence: "7"
+  head_id: "223953306"
+  lemma: 
+  user_id: "1"
+  word_id: "224020956"
+  created_at: 2008-11-09 03:57:59
+treebanks_140: 
+  updated_at: 2008-11-02 20:38:34
+  id: "506"
+  relation: COORD
+  postag: 
+  word_form: 
+  sentence: "14"
+  head_id: "206913956"
+  lemma: 
+  user_id: "1"
+  word_id: "206846302"
+  created_at: 2008-11-02 20:35:44
+treebanks_085: 
+  updated_at: 2008-10-20 01:47:59
+  id: "423"
+  relation: SBJ
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "224088608"
+  lemma: 
+  user_id: "1"
+  word_id: "224156254"
+  created_at: 2008-10-20 01:47:59
+treebanks_057: 
+  updated_at: 2008-10-18 03:16:51
+  id: "160"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "64"
+  head_id: "727906921"
+  lemma: 
+  user_id: "1"
+  word_id: "728042213"
+  created_at: 2008-10-18 03:16:51
+treebanks_112: 
+  updated_at: 2008-10-20 02:16:40
+  id: "460"
+  relation: ADV
+  postag: 
+  word_form: 
+  sentence: "10"
+  head_id: "215839522"
+  lemma: 
+  user_id: "1"
+  word_id: "215839526"
+  created_at: 2008-10-20 02:16:40
+treebanks_029: 
+  updated_at: 2008-10-18 00:59:33
+  id: "111"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "63"
+  head_id: "727703974"
+  lemma: 
+  user_id: "1"
+  word_id: "727771617"
+  created_at: 2008-10-18 00:59:33
+treebanks_141: 
+  updated_at: 2008-11-02 20:42:04
+  id: "507"
+  relation: APOS
+  postag: 
+  word_form: 
+  sentence: "14"
+  head_id: "206846306"
+  lemma: 
+  user_id: "1"
+  word_id: "206846305"
+  created_at: 2008-11-02 20:35:54
+treebanks_086: 
+  updated_at: 2008-10-20 01:48:20
+  id: "424"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "224088608"
+  lemma: 
+  user_id: "1"
+  word_id: "224156252"
+  created_at: 2008-10-20 01:48:20
+treebanks_058: 
+  updated_at: 2008-10-18 03:17:01
+  id: "161"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "64"
+  head_id: "727974564"
+  lemma: 
+  user_id: "1"
+  word_id: "727906924"
+  created_at: 2008-10-18 03:17:01
+treebanks_113: 
+  updated_at: 2008-10-20 02:17:09
+  id: "461"
+  relation: AuxP
+  postag: 
+  word_form: 
+  sentence: "10"
+  head_id: "215771879"
+  lemma: 
+  user_id: "1"
+  word_id: "215771881"
+  created_at: 2008-10-20 02:17:09
+treebanks_170: 
+  updated_at: 2008-11-03 00:59:17
+  id: "540"
+  relation: APOS
+  postag: 
+  word_form: 
+  sentence: "21"
+  head_id: "190212842"
+  lemma: 
+  user_id: "1"
+  word_id: "190212843"
+  created_at: 2008-11-03 00:59:17
+treebanks_142: 
+  updated_at: 2008-11-02 20:36:23
+  id: "508"
+  relation: ATR
+  postag: 
+  word_form: 
+  sentence: "14"
+  head_id: "206846302"
+  lemma: 
+  user_id: "1"
+  word_id: "206846304"
+  created_at: 2008-11-02 20:36:23
+treebanks_087: 
+  updated_at: 2008-10-20 01:49:12
+  id: "425"
+  relation: ATR
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "224156254"
+  lemma: 
+  user_id: "1"
+  word_id: "224156255"
+  created_at: 2008-10-20 01:49:12
+treebanks_059: 
+  updated_at: 2008-10-18 03:17:21
+  id: "162"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "64"
+  head_id: "727974568"
+  lemma: 
+  user_id: "1"
+  word_id: "728042213"
+  created_at: 2008-10-18 03:17:21
+treebanks_114: 
+  updated_at: 2008-10-20 02:17:18
+  id: "462"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "10"
+  head_id: "215771881"
+  lemma: 
+  user_id: "1"
+  word_id: "215771880"
+  created_at: 2008-10-20 02:17:18
+treebanks_171: 
+  updated_at: 2008-11-03 01:53:40
+  id: "550"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "23"
+  head_id: "558482497"
+  lemma: 
+  user_id: "1"
+  word_id: "190009895"
+  created_at: 2008-11-03 01:53:40
+treebanks_143: 
+  updated_at: 2008-11-02 20:36:29
+  id: "509"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "14"
+  head_id: "206846304"
+  lemma: 
+  user_id: "1"
+  word_id: "206846303"
+  created_at: 2008-11-02 20:36:29
+treebanks_115: 
+  updated_at: 2008-10-20 02:17:51
+  id: "463"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "10"
+  head_id: "215839521"
+  lemma: 
+  user_id: "1"
+  word_id: "215771879"
+  created_at: 2008-10-20 02:17:51
+treebanks_088: 
+  updated_at: 2008-10-20 01:49:25
+  id: "426"
+  relation: ADV
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "224156255"
+  lemma: 
+  user_id: "1"
+  word_id: "224156257"
+  created_at: 2008-10-20 01:49:25
+treebanks_001: 
+  updated_at: 2008-10-14 00:43:40
+  id: "41"
+  relation: ADV
+  postag: 
+  word_form: 
+  sentence: "68"
+  head_id: "736832491"
+  lemma: 
+  user_id: "1"
+  word_id: "736832492"
+  created_at: 2008-10-14 00:43:40
+treebanks_172: 
+  updated_at: 2008-11-03 23:34:52
+  id: "553"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "1"
+  head_id: "932949055"
+  lemma: 
+  user_id: "1"
+  word_id: "998774892"
+  created_at: 2008-11-03 23:34:52
+treebanks_144: 
+  updated_at: 2008-11-02 20:37:29
+  id: "510"
+  relation: ATR
+  postag: 
+  word_form: 
+  sentence: "14"
+  head_id: "206913959"
+  lemma: 
+  user_id: "1"
+  word_id: "206913957"
+  created_at: 2008-11-02 20:37:29
+treebanks_116: 
+  updated_at: 2008-10-20 02:17:58
+  id: "464"
+  relation: ADV
+  postag: 
+  word_form: 
+  sentence: "10"
+  head_id: "215839522"
+  lemma: 
+  user_id: "1"
+  word_id: "215839521"
+  created_at: 2008-10-20 02:17:58
+treebanks_089: 
+  updated_at: 2008-10-20 01:49:42
+  id: "427"
+  relation: ADV_CO
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "224156257"
+  lemma: 
+  user_id: "1"
+  word_id: "224156256"
+  created_at: 2008-10-20 01:49:42
+treebanks_002: 
+  updated_at: 2008-10-14 00:43:51
+  id: "42"
+  relation: ADV
+  postag: 
+  word_form: 
+  sentence: "68"
+  head_id: "744743324"
+  lemma: 
+  user_id: "1"
+  word_id: "744743325"
+  created_at: 2008-10-14 00:43:51
+treebanks_030: 
+  updated_at: 2008-10-18 01:00:05
+  id: "112"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "63"
+  head_id: "727771623"
+  lemma: 
+  user_id: "1"
+  word_id: "727771625"
+  created_at: 2008-10-18 01:00:05
+treebanks_200: 
+  updated_at: 2008-11-09 03:59:32
+  id: "625"
+  relation: AuxP
+  postag: 
+  word_form: 
+  sentence: "7"
+  head_id: "223953306"
+  lemma: 
+  user_id: "1"
+  word_id: "223953308"
+  created_at: 2008-11-09 03:59:32
+treebanks_173: 
+  updated_at: 2008-11-03 23:35:00
+  id: "554"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "1"
+  head_id: "998774892"
+  lemma: 
+  user_id: "1"
+  word_id: "998774891"
+  created_at: 2008-11-03 23:35:00
+treebanks_145: 
+  updated_at: 2008-11-02 20:37:35
+  id: "511"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "14"
+  head_id: "206913957"
+  lemma: 
+  user_id: "1"
+  word_id: "206913958"
+  created_at: 2008-11-02 20:37:35
+treebanks_117: 
+  updated_at: 2008-10-20 02:23:39
+  id: "468"
+  relation: COORD
+  postag: 
+  word_form: 
+  sentence: "11"
+  head_id: "558414846"
+  lemma: 
+  user_id: "1"
+  word_id: "215771873"
+  created_at: 2008-10-20 02:19:03
+treebanks_003: 
+  updated_at: 2008-10-14 00:44:04
+  id: "43"
+  relation: ADV
+  postag: 
+  word_form: 
+  sentence: "68"
+  head_id: "736832494"
+  lemma: 
+  user_id: "1"
+  word_id: "736832493"
+  created_at: 2008-10-14 00:44:04
+treebanks_031: 
+  updated_at: 2008-10-18 01:00:26
+  id: "113"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "63"
+  head_id: "727839266"
+  lemma: 
+  user_id: "1"
+  word_id: "727839267"
+  created_at: 2008-10-18 01:00:26
+treebanks_201: 
+  updated_at: 2008-11-09 03:59:39
+  id: "626"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "7"
+  head_id: "223953308"
+  lemma: 
+  user_id: "1"
+  word_id: "223953307"
+  created_at: 2008-11-09 03:59:39
+treebanks_174: 
+  updated_at: 2008-11-03 23:35:15
+  id: "555"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "2"
+  head_id: "669105705"
+  lemma: 
+  user_id: "1"
+  word_id: "18501297"
+  created_at: 2008-11-03 23:35:15
+treebanks_146: 
+  updated_at: 2008-11-02 20:38:13
+  id: "512"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "14"
+  head_id: "206846301"
+  lemma: 
+  user_id: "1"
+  word_id: "206913956"
+  created_at: 2008-11-02 20:38:13
+treebanks_118: 
+  updated_at: 2008-10-20 02:23:49
+  id: "469"
+  relation: PRED_CO
+  postag: 
+  word_form: 
+  sentence: "11"
+  head_id: "215771873"
+  lemma: 
+  user_id: "1"
+  word_id: "215771874"
+  created_at: 2008-10-20 02:19:14
+treebanks_004: 
+  updated_at: 2008-10-14 01:18:24
+  id: "44"
+  relation: ADJ
+  postag: 
+  word_form: 
+  sentence: "67"
+  head_id: "736561894"
+  lemma: 
+  user_id: "1"
+  word_id: "736561893"
+  created_at: 2008-10-14 01:18:24
+treebanks_060: 
+  updated_at: 2008-10-18 03:17:25
+  id: "163"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "64"
+  head_id: "727974569"
+  lemma: 
+  user_id: "1"
+  word_id: "727974568"
+  created_at: 2008-10-18 03:17:25
+treebanks_032: 
+  updated_at: 2008-10-18 01:00:37
+  id: "114"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "63"
+  head_id: "727839266"
+  lemma: 
+  user_id: "1"
+  word_id: "727906919"
+  created_at: 2008-10-18 01:00:37
+treebanks_202: 
+  updated_at: 2008-11-09 04:00:49
+  id: "627"
+  relation: ADV
+  postag: 
+  word_form: 
+  sentence: "7"
+  head_id: "224020954"
+  lemma: 
+  user_id: "1"
+  word_id: "223953310"
+  created_at: 2008-11-09 04:00:49
+treebanks_175: 
+  updated_at: 2008-11-03 23:38:53
+  id: "556"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "2"
+  head_id: "18501297"
+  lemma: 
+  user_id: "1"
+  word_id: "18501298"
+  created_at: 2008-11-03 23:38:53
+treebanks_147: 
+  updated_at: 2008-11-02 20:38:50
+  id: "513"
+  relation: COORD
+  postag: 
+  word_form: 
+  sentence: "14"
+  head_id: "206913956"
+  lemma: 
+  user_id: "1"
+  word_id: "206846309"
+  created_at: 2008-11-02 20:38:50
+treebanks_119: 
+  updated_at: 2008-10-20 02:23:52
+  id: "470"
+  relation: PRED_CO
+  postag: 
+  word_form: 
+  sentence: "11"
+  head_id: "215771873"
+  lemma: 
+  user_id: "1"
+  word_id: "215704227"
+  created_at: 2008-10-20 02:19:18
+treebanks_005: 
+  updated_at: 2008-10-14 01:18:35
+  id: "45"
+  relation: ADJ
+  postag: 
+  word_form: 
+  sentence: "67"
+  head_id: "736832487"
+  lemma: 
+  user_id: "1"
+  word_id: "736832486"
+  created_at: 2008-10-14 01:18:35
+treebanks_061: 
+  updated_at: 2008-10-18 03:17:31
+  id: "164"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "64"
+  head_id: "727974570"
+  lemma: 
+  user_id: "1"
+  word_id: "727974573"
+  created_at: 2008-10-18 03:17:31
+treebanks_033: 
+  updated_at: 2008-10-18 01:00:53
+  id: "115"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "63"
+  head_id: "727771625"
+  lemma: 
+  user_id: "1"
+  word_id: "727906919"
+  created_at: 2008-10-18 01:00:53
+treebanks_203: 
+  updated_at: 2008-11-09 04:00:59
+  id: "628"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "7"
+  head_id: "223953310"
+  lemma: 
+  user_id: "1"
+  word_id: "223953311"
+  created_at: 2008-11-09 04:00:59
+treebanks_176: 
+  updated_at: 2008-11-03 23:39:49
+  id: "557"
+  relation: SBJ
+  postag: 
+  word_form: 
+  sentence: "2"
+  head_id: "18568949"
+  lemma: 
+  user_id: "1"
+  word_id: "18568950"
+  created_at: 2008-11-03 23:39:49
+treebanks_148: 
+  updated_at: 2008-11-02 20:39:45
+  id: "514"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "14"
+  head_id: "206846309"
+  lemma: 
+  user_id: "1"
+  word_id: "206913951"
+  created_at: 2008-11-02 20:39:45
+treebanks_090: 
+  updated_at: 2008-10-20 01:49:45
+  id: "428"
+  relation: ADV_CO
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "224156257"
+  lemma: 
+  user_id: "1"
+  word_id: "224156258"
+  created_at: 2008-10-20 01:49:45
+treebanks_062: 
+  updated_at: 2008-10-18 03:17:43
+  id: "165"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "64"
+  head_id: "727974569"
+  lemma: 
+  user_id: "1"
+  word_id: "727974573"
+  created_at: 2008-10-18 03:17:43
+treebanks_034: 
+  updated_at: 2008-10-18 01:01:25
+  id: "116"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "63"
+  head_id: "727839275"
+  lemma: 
+  user_id: "1"
+  word_id: "727906919"
+  created_at: 2008-10-18 01:01:25
+treebanks_006: 
+  updated_at: 2008-10-14 01:18:39
+  id: "46"
+  relation: ADJ
+  postag: 
+  word_form: 
+  sentence: "67"
+  head_id: "736832488"
+  lemma: 
+  user_id: "1"
+  word_id: "736832489"
+  created_at: 2008-10-14 01:18:39
+treebanks_204: 
+  updated_at: 2008-11-09 04:01:08
+  id: "629"
+  relation: SBJ
+  postag: 
+  word_form: 
+  sentence: "7"
+  head_id: "223953311"
+  lemma: 
+  user_id: "1"
+  word_id: "223953312"
+  created_at: 2008-11-09 04:01:08
+treebanks_177: 
+  updated_at: 2008-11-03 23:57:24
+  id: "560"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "8"
+  head_id: "669105699"
+  lemma: 
+  user_id: "1"
+  word_id: "223953305"
+  created_at: 2008-11-03 23:57:24
+treebanks_149: 
+  updated_at: 2008-11-02 20:41:40
+  id: "515"
+  relation: SBJ
+  postag: 
+  word_form: 
+  sentence: "14"
+  head_id: "206846302"
+  lemma: 
+  user_id: "1"
+  word_id: "206846306"
+  created_at: 2008-11-02 20:41:40
+treebanks_063: 
+  updated_at: 2008-10-19 17:34:35
+  id: "345"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "5"
+  head_id: "669105702"
+  lemma: 
+  user_id: "1"
+  word_id: "224223907"
+  created_at: 2008-10-19 01:36:18
+treebanks_035: 
+  updated_at: 2008-10-18 03:11:22
+  id: "138"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "66"
+  head_id: "728177517"
+  lemma: 
+  user_id: "1"
+  word_id: "728177518"
+  created_at: 2008-10-18 03:11:22
+treebanks_007: 
+  updated_at: 2008-10-14 09:21:44
+  id: "47"
+  relation: NOM
+  postag: 
+  word_form: 
+  sentence: "67"
+  head_id: "736494246"
+  lemma: 
+  user_id: "1"
+  word_id: "736494247"
+  created_at: 2008-10-14 09:21:44
+treebanks_091: 
+  updated_at: 2008-10-20 01:50:14
+  id: "429"
+  relation: ATR
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "224156258"
+  lemma: 
+  user_id: "1"
+  word_id: "224156259"
+  created_at: 2008-10-20 01:50:14
+treebanks_205: 
+  updated_at: 2008-11-09 04:01:16
+  id: "630"
+  relation: ATR
+  postag: 
+  word_form: 
+  sentence: "7"
+  head_id: "223953312"
+  lemma: 
+  user_id: "1"
+  word_id: "223953313"
+  created_at: 2008-11-09 04:01:16
+treebanks_178: 
+  updated_at: 2008-11-06 20:03:04
+  id: "569"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "69"
+  head_id: "558753099"
+  lemma: 
+  user_id: "1"
+  word_id: "744878626"
+  created_at: 2008-11-06 20:02:44
+treebanks_064: 
+  updated_at: 2008-10-19 17:37:24
+  id: "346"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "5"
+  head_id: "224223907"
+  lemma: 
+  user_id: "1"
+  word_id: "224223906"
+  created_at: 2008-10-19 01:36:41
+treebanks_036: 
+  updated_at: 2008-10-18 03:11:51
+  id: "139"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "65"
+  head_id: "728109862"
+  lemma: 
+  user_id: "1"
+  word_id: "728109863"
+  created_at: 2008-10-18 03:11:51
+treebanks_008: 
+  updated_at: 2008-10-14 09:22:13
+  id: "48"
+  relation: NOM
+  postag: 
+  word_form: 
+  sentence: "67"
+  head_id: "736494250"
+  lemma: 
+  user_id: "1"
+  word_id: "736561890"
+  created_at: 2008-10-14 09:22:13
+treebanks_092: 
+  updated_at: 2008-10-20 01:50:41
+  id: "430"
+  relation: ATR
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "224156252"
+  lemma: 
+  user_id: "1"
+  word_id: "224156253"
+  created_at: 2008-10-20 01:50:41
+treebanks_206: 
+  updated_at: 2008-11-09 04:01:24
+  id: "631"
+  relation: ADV
+  postag: 
+  word_form: 
+  sentence: "7"
+  head_id: "223953310"
+  lemma: 
+  user_id: "1"
+  word_id: "224020953"
+  created_at: 2008-11-09 04:01:24
+treebanks_179: 
+  updated_at: 2008-11-06 20:03:11
+  id: "570"
+  relation: SBJ
+  postag: 
+  word_form: 
+  sentence: "69"
+  head_id: "744878626"
+  lemma: 
+  user_id: "1"
+  word_id: "744878625"
+  created_at: 2008-11-06 20:03:11
+treebanks_120: 
+  updated_at: 2008-10-20 02:24:07
+  id: "471"
+  relation: AuxP
+  postag: 
+  word_form: 
+  sentence: "11"
+  head_id: "215704227"
+  lemma: 
+  user_id: "1"
+  word_id: "215704230"
+  created_at: 2008-10-20 02:24:07
+treebanks_065: 
+  updated_at: 2008-10-19 01:36:58
+  id: "347"
+  relation: ADV
+  postag: 
+  word_form: 
+  sentence: "5"
+  head_id: "224223900"
+  lemma: 
+  user_id: "1"
+  word_id: "224223905"
+  created_at: 2008-10-19 01:36:58
+treebanks_037: 
+  updated_at: 2008-10-18 03:12:01
+  id: "140"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "65"
+  head_id: "728042222"
+  lemma: 
+  user_id: "1"
+  word_id: "728042221"
+  created_at: 2008-10-18 03:12:01
+treebanks_009: 
+  updated_at: 2008-10-14 09:56:05
+  id: "49"
+  relation: NOM
+  postag: 
+  word_form: 
+  sentence: "67"
+  head_id: "736494247"
+  lemma: 
+  user_id: "1"
+  word_id: "736494249"
+  created_at: 2008-10-14 09:56:05
+treebanks_093: 
+  updated_at: 2008-10-20 01:51:50
+  id: "431"
+  relation: ADV
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "224088609"
+  lemma: 
+  user_id: "1"
+  word_id: "224156251"
+  created_at: 2008-10-20 01:50:50
+treebanks_207: 
+  updated_at: 2008-11-09 04:01:41
+  id: "632"
+  relation: AuxP
+  postag: 
+  word_form: 
+  sentence: "7"
+  head_id: "223953306"
+  lemma: 
+  user_id: "1"
+  word_id: "224020954"
+  created_at: 2008-11-09 04:01:41
+treebanks_121: 
+  updated_at: 2008-10-20 02:24:14
+  id: "472"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "11"
+  head_id: "215704230"
+  lemma: 
+  user_id: "1"
+  word_id: "215704229"
+  created_at: 2008-10-20 02:24:14
+treebanks_066: 
+  updated_at: 2008-10-19 01:37:27
+  id: "348"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "5"
+  head_id: "224223900"
+  lemma: 
+  user_id: "1"
+  word_id: "224223903"
+  created_at: 2008-10-19 01:37:27
+treebanks_038: 
+  updated_at: 2008-10-18 03:12:05
+  id: "141"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "65"
+  head_id: "728042221"
+  lemma: 
+  user_id: "1"
+  word_id: "728109863"
+  created_at: 2008-10-18 03:12:05
+treebanks_094: 
+  updated_at: 2008-10-20 01:51:20
+  id: "432"
+  relation: ATR
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "224156252"
+  lemma: 
+  user_id: "1"
+  word_id: "224088609"
+  created_at: 2008-10-20 01:51:20
+treebanks_208: 
+  updated_at: 2008-11-09 13:36:08
+  id: "633"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "7"
+  head_id: "669105700"
+  lemma: 
+  user_id: "1"
+  word_id: "223953306"
+  created_at: 2008-11-09 13:30:41
+treebanks_150: 
+  updated_at: 2008-11-09 01:02:08
+  id: "516"
+  relation: ATR
+  postag: 
+  word_form: 
+  sentence: "15"
+  head_id: "206778660"
+  lemma: 
+  user_id: "1"
+  word_id: "206778661"
+  created_at: 2008-11-02 20:42:55
+treebanks_122: 
+  updated_at: 2008-10-20 02:24:23
+  id: "473"
+  relation: ATR
+  postag: 
+  word_form: 
+  sentence: "11"
+  head_id: "215704229"
+  lemma: 
+  user_id: "1"
+  word_id: "215704228"
+  created_at: 2008-10-20 02:24:23
+treebanks_067: 
+  updated_at: 2008-10-19 01:37:35
+  id: "349"
+  relation: ATR
+  postag: 
+  word_form: 
+  sentence: "5"
+  head_id: "224223903"
+  lemma: 
+  user_id: "1"
+  word_id: "224223904"
+  created_at: 2008-10-19 01:37:35
+treebanks_039: 
+  updated_at: 2008-10-18 03:12:15
+  id: "142"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "65"
+  head_id: "728042214"
+  lemma: 
+  user_id: "1"
+  word_id: "728109863"
+  created_at: 2008-10-18 03:12:15
+treebanks_095: 
+  updated_at: 2008-10-20 01:52:09
+  id: "433"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "224156251"
+  lemma: 
+  user_id: "1"
+  word_id: "224088610"
+  created_at: 2008-10-20 01:52:09
+treebanks_151: 
+  updated_at: 2008-11-09 01:03:31
+  id: "517"
+  relation: AuxP
+  postag: 
+  word_form: 
+  sentence: "15"
+  head_id: "206778654"
+  lemma: 
+  user_id: "1"
+  word_id: "206778656"
+  created_at: 2008-11-02 20:43:15
+treebanks_123: 
+  updated_at: 2008-10-20 02:34:55
+  id: "474"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "11"
+  head_id: "215771874"
+  lemma: 
+  user_id: "1"
+  word_id: "215771875"
+  created_at: 2008-10-20 02:34:55
+treebanks_068: 
+  updated_at: 2008-10-19 01:38:16
+  id: "350"
+  relation: ADV
+  postag: 
+  word_form: 
+  sentence: "5"
+  head_id: "224223900"
+  lemma: 
+  user_id: "1"
+  word_id: "224223902"
+  created_at: 2008-10-19 01:38:16
+treebanks_096: 
+  updated_at: 2008-10-20 01:52:21
+  id: "434"
+  relation: ATR
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "224088610"
+  lemma: 
+  user_id: "1"
+  word_id: "224088611"
+  created_at: 2008-10-20 01:52:21
+treebanks_180: 
+  updated_at: 2008-11-06 20:03:16
+  id: "571"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "69"
+  head_id: "744878626"
+  lemma: 
+  user_id: "1"
+  word_id: "744878621"
+  created_at: 2008-11-06 20:03:16
+treebanks_152: 
+  updated_at: 2008-11-09 01:04:05
+  id: "518"
+  relation: ADV
+  postag: 
+  word_form: 
+  sentence: "15"
+  head_id: "206778656"
+  lemma: 
+  user_id: "1"
+  word_id: "206778655"
+  created_at: 2008-11-02 20:43:20
+treebanks_124: 
+  updated_at: 2008-10-20 02:35:38
+  id: "475"
+  relation: ADV
+  postag: 
+  word_form: 
+  sentence: "11"
+  head_id: "215771874"
+  lemma: 
+  user_id: "1"
+  word_id: "215771876"
+  created_at: 2008-10-20 02:35:38
+treebanks_097: 
+  updated_at: 2008-10-20 01:53:49
+  id: "435"
+  relation: COORD
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "224088607"
+  lemma: 
+  user_id: "1"
+  word_id: "224020957"
+  created_at: 2008-10-20 01:53:49
+treebanks_010: 
+  updated_at: 2008-10-14 09:56:23
+  id: "50"
+  relation: NOM
+  postag: 
+  word_form: 
+  sentence: "67"
+  head_id: "736494247"
+  lemma: 
+  user_id: "1"
+  word_id: "736494249"
+  created_at: 2008-10-14 09:56:23
+treebanks_069: 
+  updated_at: 2008-10-19 01:38:21
+  id: "351"
+  relation: ATR
+  postag: 
+  word_form: 
+  sentence: "5"
+  head_id: "224223902"
+  lemma: 
+  user_id: "1"
+  word_id: "224223901"
+  created_at: 2008-10-19 01:38:21
+treebanks_181: 
+  updated_at: 2008-11-06 20:03:42
+  id: "572"
+  relation: ADV
+  postag: 
+  word_form: 
+  sentence: "69"
+  head_id: "744878626"
+  lemma: 
+  user_id: "1"
+  word_id: "744878624"
+  created_at: 2008-11-06 20:03:42
+treebanks_153: 
+  updated_at: 2008-11-09 01:02:57
+  id: "519"
+  relation: AuxP
+  postag: 
+  word_form: 
+  sentence: "15"
+  head_id: "206778654"
+  lemma: 
+  user_id: "1"
+  word_id: "206778659"
+  created_at: 2008-11-02 20:43:31
+treebanks_125: 
+  updated_at: 2008-10-20 02:35:48
+  id: "476"
+  relation: SBJ
+  postag: 
+  word_form: 
+  sentence: "11"
+  head_id: "215771876"
+  lemma: 
+  user_id: "1"
+  word_id: "215771878"
+  created_at: 2008-10-20 02:35:48
+treebanks_098: 
+  updated_at: 2008-10-20 01:53:59
+  id: "436"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "669105701"
+  lemma: 
+  user_id: "1"
+  word_id: "224088607"
+  created_at: 2008-10-20 01:53:59
+treebanks_011: 
+  updated_at: 2008-10-14 09:56:50
+  id: "51"
+  relation: NOM
+  postag: 
+  word_form: 
+  sentence: "67"
+  head_id: "736494246"
+  lemma: 
+  user_id: "1"
+  word_id: "736494247"
+  created_at: 2008-10-14 09:56:50
+treebanks_182: 
+  updated_at: 2008-11-06 20:06:12
+  id: "573"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "4"
+  head_id: "669105703"
+  lemma: 
+  user_id: "1"
+  word_id: "224223908"
+  created_at: 2008-11-06 20:05:56
+treebanks_154: 
+  updated_at: 2008-11-02 20:43:36
+  id: "520"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "15"
+  head_id: "206778659"
+  lemma: 
+  user_id: "1"
+  word_id: "206778658"
+  created_at: 2008-11-02 20:43:36
+treebanks_126: 
+  updated_at: 2008-10-20 02:35:54
+  id: "477"
+  relation: ATR
+  postag: 
+  word_form: 
+  sentence: "11"
+  head_id: "215771878"
+  lemma: 
+  user_id: "1"
+  word_id: "215771877"
+  created_at: 2008-10-20 02:35:54
+treebanks_040: 
+  updated_at: 2008-10-18 03:12:35
+  id: "143"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "65"
+  head_id: "728042220"
+  lemma: 
+  user_id: "1"
+  word_id: "728109863"
+  created_at: 2008-10-18 03:12:35
+treebanks_099: 
+  updated_at: 2008-10-20 01:54:23
+  id: "437"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "6"
+  head_id: "224020957"
+  lemma: 
+  user_id: "1"
+  word_id: "224020959"
+  created_at: 2008-10-20 01:54:23
+treebanks_012: 
+  updated_at: 2008-10-18 00:42:45
+  id: "91"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "65"
+  head_id: "728042216"
+  lemma: 
+  user_id: "1"
+  word_id: "728109863"
+  created_at: 2008-10-18 00:42:45
+treebanks_183: 
+  updated_at: 2008-11-06 20:06:18
+  id: "574"
+  relation: SBJ
+  postag: 
+  word_form: 
+  sentence: "4"
+  head_id: "224223908"
+  lemma: 
+  user_id: "1"
+  word_id: "224223909"
+  created_at: 2008-11-06 20:06:18
+treebanks_155: 
+  updated_at: 2008-11-09 01:01:53
+  id: "521"
+  relation: SBJ
+  postag: 
+  word_form: 
+  sentence: "15"
+  head_id: "206778654"
+  lemma: 
+  user_id: "1"
+  word_id: "206778660"
+  created_at: 2008-11-02 20:43:54
+treebanks_127: 
+  updated_at: 2008-10-20 02:36:20
+  id: "478"
+  relation: ADV
+  postag: 
+  word_form: 
+  sentence: "11"
+  head_id: "215704227"
+  lemma: 
+  user_id: "1"
+  word_id: "215771872"
+  created_at: 2008-10-20 02:36:20
+treebanks_041: 
+  updated_at: 2008-10-18 03:12:46
+  id: "144"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "65"
+  head_id: "728109865"
+  lemma: 
+  user_id: "1"
+  word_id: "728109863"
+  created_at: 2008-10-18 03:12:46
+treebanks_013: 
+  updated_at: 2008-10-18 00:44:16
+  id: "92"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "65"
+  head_id: "728042215"
+  lemma: 
+  user_id: "1"
+  word_id: "728042214"
+  created_at: 2008-10-18 00:44:16
+treebanks_184: 
+  updated_at: 2008-11-06 20:06:41
+  id: "575"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "4"
+  head_id: "669105703"
+  lemma: 
+  user_id: "1"
+  word_id: "224291550"
+  created_at: 2008-11-06 20:06:41
+treebanks_156: 
+  updated_at: 2008-11-02 20:44:06
+  id: "522"
+  relation: ADV
+  postag: 
+  word_form: 
+  sentence: "15"
+  head_id: "206778654"
+  lemma: 
+  user_id: "1"
+  word_id: "206778657"
+  created_at: 2008-11-02 20:44:06
+treebanks_128: 
+  updated_at: 2008-10-20 02:36:51
+  id: "479"
+  relation: AuxP
+  postag: 
+  word_form: 
+  sentence: "11"
+  head_id: "215771872"
+  lemma: 
+  user_id: "1"
+  word_id: "215704232"
+  created_at: 2008-10-20 02:36:51
+treebanks_042: 
+  updated_at: 2008-10-18 03:12:58
+  id: "145"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "65"
+  head_id: "728109871"
+  lemma: 
+  user_id: "1"
+  word_id: "728177511"
+  created_at: 2008-10-18 03:12:58
+treebanks_014: 
+  updated_at: 2008-10-18 00:44:25
+  id: "93"
+  relation: PRED
+  postag: 
+  word_form: 
+  sentence: "65"
+  head_id: "728042218"
+  lemma: 
+  user_id: "1"
+  word_id: "728042217"
+  created_at: 2008-10-18 00:44:25
+treebanks_070: 
+  updated_at: 2008-10-19 01:38:42
+  id: "352"
+  relation: OBJ
+  postag: 
+  word_form: 
+  sentence: "5"
+  head_id: "224156260"
+  lemma: 
+  user_id: "1"
+  word_id: "224223900"
+  created_at: 2008-10-19 01:38:42

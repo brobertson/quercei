@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+   <title>Querci: A Framework for Treebank Editing</title>
+   <%= javascript_include_tag :defaults %>
+   <%= stylesheet_link_tag 'style.css' %>   
+   <%= stylesheet_link_tag 'local.css' %>
+   <%= yield :head %>
+ </head>
+ <body>
+  <div id="container">
+   <div id="header"><a href="/"><i>Querci:</i>
+  <br/>
+<div class="subtitle">A Framework for Collaborative Treebank Editing</div>
+</a>
+</div>
+<div id="menu">
+  <% if logged_in? %>
+    <%= link_to "logout", destroy_session_url %>
+|
+    <%= link_to "edit", :controller => "documents", :action => "choose" %> 
+ <% else %>
+   <%= link_to "login",  :controller => "session", :action => "new" %>
+
+   | <%= link_to "sign up", :controller => "users", :action => "new" %> 
+  <% end %> 
+| <a href="/intro">Introduction</a> | <a href="/static/development">Development</a> | <a href="/static/contact">Contact</a></div>
+<p><span id="flasherror"><%= flash[:error] %></span><span id="flashnotice"><%= flash[:notice] %></span></p>
+   <%= @content_for_layout %>
+
+<div id="footer">Copyright ©2008 Bruce G. Robertson
+&nbsp;<span class="separator">|</span> &nbsp; 
+CSS based on a design by <a href="http://www.realitysoftware.ca" title="Website Design">Reality Software</a>
+<!-- ****************************************** -->
+
+</div>
+</div>
+</body>
+</html>

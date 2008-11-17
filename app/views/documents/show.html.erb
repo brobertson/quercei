@@ -1,0 +1,18 @@
+<p>
+  <b>Urn:</b>
+  <%=h @document.urn %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @document.title %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%=h @document.author %>
+</p>
+
+
+<%= link_to 'Edit', edit_document_path(@document) %> |
+<%= link_to 'Back', documents_path %>

@@ -1,0 +1,39 @@
+<h1>New treebank</h1>
+
+<% form_for(@treebank) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :word_id %><br />
+    <%= f.text_field :word_id %>
+  </p>
+  <p>
+    <%= f.label :word_form %><br />
+    <%= f.text_field :word_form %>
+  </p>
+  <p>
+    <%= f.label :head_id %><br />
+    <%= f.text_field :head_id %>
+  </p>
+  <p>
+    <%= f.label :relation %><br />
+    <%= f.text_field :relation %>
+  </p>
+  <p>
+    <%= f.label :postag %><br />
+    <%= f.text_field :postag %>
+  </p>
+  <p>
+    <%= f.label :lemma %><br />
+    <%= f.text_field :lemma %>
+  </p>
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', treebanks_path %>

@@ -1,0 +1,31 @@
+<p>
+  <b>Number:</b>
+  <%=h @word.number %>
+</p>
+
+<p>
+  <b>Form:</b>
+  <%=h @word.form %>
+</p>
+
+<p>
+  <b>Sentence:</b>
+  <%=h @word.sentence %>
+</p>
+
+<p>
+  <b>Document urn:</b>
+  <%=h @word.document_urn %>
+</p>
+
+<p>
+  <b>Document span:</b>
+  <%=h @word.document_span %>
+</p>
+
+<p>
+  <b>Subdoc:</b>
+  <%=h @word.subdoc %>
+</p>
+<%= link_to 'Edit', edit_word_path(@word) %> |
+<%= link_to 'Back', words_path %>

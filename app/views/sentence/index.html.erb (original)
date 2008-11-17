@@ -1,0 +1,96 @@
+<script>
+function updateRepresentation() { <%= remote_function(
+:update=>"representation",
+  :url=>{:controller=>"treebanks",
+        :action=>"renderSentenceSVG",
+       :user_id=>current_user.id,
+       :sentence=>@sentence_number}
+  )
+%>
+}
+window.onload=updateRepresentation();
+</script>
+<div id="sidebar">
+<p>
+<% if logged_in? %>
+<p style="color: green"><%= flash[:notice] %></p>
+<p style="color: red"> <%= flash[:error] %></p>
+editing as: <code><%= current_user.login %></code>
+<% else %>
+not logged in
+<% end %>
+</p>
+<p>
+Relation: <%= select_tag "relation", options_for_select(@tagset) %>
+
+<!-- this function is called each time we d'n'd, so I don't
+     think it is needed as a separate button anymore.
+     I keep it here in case I'll change my mind.
+
+<%= link_to_remote "View Sentence",
+    :url=>{
+        :controller=>"treebanks",
+        :action=>"renderSentence", 
+       :user_id=>current_user.id,
+       :sentence=>@sentence_number},
+    :update=>"representation"
+%>
+-->
+
+<%= link_to_remote "SVG Me", 
+        :update => "representation",
+        :url => {:controller=>"treebanks", 
+                 :action=>"renderSentenceSVG",
+                 :user_id=>current_user.id,
+                 :sentence=>@sentence_number},
+        :loading  => "new Element.update('dotsvg','<p>Loading graph ...</p>')",
+        :complete => "new Effect.Highlight('dotsvg');"
+         %>
+
+<br/>
+<%= link_to_remote "Clear Sentence", 
+   :url=> {
+     :controller=>"treebanks",
+     :action=>"clearSentence",
+     :user_id=> current_user.id,
+     :sentence=>@sentence_number},
+     :update => "representation",
+     :confirm => "Do you want to undo all work on this sentence?"
+%>
+
+</p>
+<p>
+
+</div>
+
+<div id="main">
+<div id="text">
+<h3><span id="document_urn"><%= @document_urn %></span>  Sentence #<span id="sentence_number"><%= @sentence_number %></span></h3>
+<p> 
+<span id="head">
+HEAD
+</span>
+<%= drop_receiving_element :head, :accept => "word", :hoverclass => "hover" %>
+<% for word in @words %>
+<span class="word" id="<%=h word.id %>">
+<%=h word.form %> <%=h word.number %>
+</span>
+<%= draggable_element(word.id.to_s, :revert => true) %>
+<!--
+<%= drop_receiving_element word.id.to_s, :accept => "word", :update => "debug", :onDrop => "function(drop, drag) {var dropdownIndex = document.getElementById('relation').selectedIndex; var dropdownValue = document.getElementById('relation')[dropdownIndex].value; document.getElementById('debug').innerHTML = '<pre>" + current_user.login.to_s + ": ' + drop.id + ' ==' + dropdownValue + '==> ' + drag.id;}", :hoverclass => "hover" %>
+-->
+<%= drop_receiving_element word.id.to_s, :accept => "word", :update => "representation", :hoverclass => "hover", :url => {  :controller => "treebanks", :action => "addFromJS"}, :with => "'relation=' + $F('relation') + '&head_id=' + word.id.to_s + '&word_id=" + element.id + "&user_id=" + current_user.id.to_s + "&sentence=" + @sentence_number.to_s + "'", :complete=> "update();"   %>
+
+<% end %>
+.
+</p>
+<%= link_to_if @previous_sentence_exists, 'Previous Sentence', :controller => "sentence", :document_urn => @document_urn, :sentence => @previous_sentence_number %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<%= link_to_if @next_sentence_exists, 'Next Sentence', :controller=>"sentence", :document_urn => @document_urn, :sentence => @next_sentence_number  %>
+<div id="debug"></div>
+<hr/>
+<h3>Sentence Model</h3>
+<div id="representation"></div>
+</div>
+<div class="clear"/>
+</div>

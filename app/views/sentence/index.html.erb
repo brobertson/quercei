@@ -1,0 +1,170 @@
+<script>
+<![CDATA[
+function updateRepresentation() { <%= remote_function(
+:update=>"representation",
+  :url=>{:controller=>"treebanks",
+        :action=>"renderSentenceSVG",
+       :user_id=>current_user.id,
+       :sentence=>@sentence_number,
+       :graphType => "dot"}, 
+  :complete => "updateText();"
+
+  )
+%>
+}
+
+function highlightSVG(word_number) {
+  element = document.getElementById("SVG_" + word_number);
+  if (element != null) {element.setAttribute("fill", "red");}
+}
+function deHighlightSVG(word_number) {
+  element = document.getElementById("SVG_" + word_number)
+  if (element != null) {element.setAttribute("fill", "black");}
+}
+function deHighlightText(word_number) {
+  document.getElementById(word_number).style.border = '1px hidden gray';
+}
+function highlightText(word_number) {
+  document.getElementById(word_number).style.border = '1px solid gray'; 
+}
+
+function showTextCompleted(word_number) {
+  document.getElementById(word_number).style.color = "#3b7687";
+}
+
+function showTextIncomplete(word_number) {
+ document.getElementById(word_number).style.color = "black";
+
+}
+
+function clearText() {
+var Evaluator = new XPathEvaluator();
+var iterator = Evaluator.evaluate('//xhtml:span[@class="word"]', $('printVersion'), nsResolver, XPathResult.ANY_TYPE, null);
+var counter = 0;
+var words = new Array();
+
+try {
+   var thisNode = iterator.iterateNext();
+   while (thisNode) {
+   // alert(thisNode.id)
+   //showTextIncomplete(thisNode.id)
+   words[counter] = thisNode.id;
+   thisNode = iterator.iterateNext();
+   counter ++;
+}// end while
+  //alert(completedWords);
+for (key = 0;  key <  words.length; key ++) {
+  showTextIncomplete(words[key]);
+}//end for
+element = $('totalWords')
+
+element.innerHTML = words.length;
+ }//end try
+	
+
+catch (e) {
+  alert( 'Error: ' + e );
+}//end catch
+}//end try
+
+function updateText() {
+//alert("clearText");
+clearText();
+var Evaluator = new XPathEvaluator();
+var counter = 0;
+var completedWords = new Array();
+var iterator = Evaluator.evaluate('//svg:g[@class="node"]',$('representation'), nsResolver, XPathResult.ANY_TYPE, null );
+try {
+   var thisNode = iterator.iterateNext();
+  while (thisNode) {
+  //the name of these nodes begins with 'SVG_' so we strip this out
+  // alert(thisNode.id.substr(4));
+   completedWords[counter] = thisNode.id.substr(4);
+    thisNode = iterator.iterateNext();
+   counter ++;
+  }	
+
+//alert("how long? " + completedWords.length);
+for (key = 0;  key <  completedWords.length; key ++) {
+  showTextCompleted(completedWords[key]);
+}
+element = $('completedWords')
+element.innerHTML = completedWords.length;
+
+}
+catch (e) {
+  alert( 'Error:  ' + e );
+}
+
+}
+
+function nsResolver(prefix) {
+  var ns = {
+    'xhtml' : 'http://www.w3.org/1999/xhtml',
+    'svg': 'http://www.w3.org/2000/svg'
+  };
+  return ns[prefix] || null;
+}
+
+
+window.onload=updateRepresentation();
+
+
+]]>
+</script>
+<div id="main">
+<div id="text">
+<h3><span id="document_urn"><%= @document_urn %></span>  Sentence #<span id="sentence_number"><%= @sentence_number %></span></h3>
+<p id="printVersion"> 
+
+<% for word in @words %>
+
+<script type="text/javascript">
+<![CDATA[
+function deleteFromSVG<%= word.id.to_s %>() {
+<%=
+remote_function (
+ :update => "representation",  
+ :url => {  :controller => "treebanks", :action => "deleteByWordId"}, 
+ :with => "'&word_id=" + word.id.to_s + "&user_id=" + current_user.id.to_s + "&sentence=" + @sentence_number.to_s + "'", :complete => "updateText();")   %>
+ deHighlightText(<%=h word.id %>);
+}
+]]>
+</script>
+<span class="word" onmouseover="highlightSVG(<%=h word.id %>);" onmouseout="deHighlightSVG(<%=h word.id %>);" id="<%=h word.id %>"><%=h word.form %></span><span class="space"> </span>
+<%= draggable_element(word.id.to_s, :revert => true) %>
+<%= drop_receiving_element word.id.to_s, :accept => "word", :update => "representation", :hoverclass => "hover", :url => {  :controller => "treebanks", :action => "addFromJS"}, :with => "'&relation=' + $F('relation') + '&head_id=' + element.id  + '&word_id=" + word.id.to_s + "&user_id=" + current_user.id.to_s + "&sentence=" + @sentence_number.to_s + "'", :complete => "updateText();"   %>
+
+<% end %>
+. <code>[<span id="completedWords"></span>/<span id="totalWords"></span>]</code>
+</p>
+
+<%= select_tag "relation", options_for_select(@tagset) %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<code>
+<%= link_to_if @previous_sentence_exists, '&#8592;', :controller => "sentence", :document_urn => @document_urn, :sentence => @previous_sentence_number %>
+</code>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<code>
+<%= link_to_if @next_sentence_exists, '&#8594;', :controller=>"sentence", :document_urn => @document_urn, :sentence => @next_sentence_number  %>
+</code>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<code>
+<%= link_to_remote "Clear", 
+   :url=> {
+     :controller=>"treebanks",
+     :action=>"clearSentence",
+     :user_id=> current_user.id,
+     :sentence=>@sentence_number},
+     :update => "representation",
+     :confirm => "Do you want to undo all work on this sentence?",
+     :complete => "updateText();"
+%>
+</code>
+<div id="debug"></div>
+<hr/>
+
+<div id="representation"></div>
+</div>
+<div class="clear"/>
+</div>

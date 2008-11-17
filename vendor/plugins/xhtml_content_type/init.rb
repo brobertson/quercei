@@ -1,0 +1,1 @@
+require 'xhtml_content_type'

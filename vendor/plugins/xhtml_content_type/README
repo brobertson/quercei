@@ -1,0 +1,104 @@
+= xhtml_content_type plugin for Rails
+
+xhtml_content_type allows you to set the default MIME type for rendered .rhtml
+views to application/xhtml+xml if the client supports it, and only falling back
+to text/html for older clients.
+
+For more information as to why this is good behavior, read this:
+http://hixie.ch/advocacy/xhtml
+
+== Installation
+
+If your project is source-controlled by Subversion (which it should be, really),
+the easiest way to install this is via Rails' plugin script:
+
+  ./script/plugin install -x http://svn.codahale.com/xhtml_content_type
+
+If you're not using Subversion, or if you don't want it adding
+<tt>svn:externals</tt> in your project, remove the <tt>-x</tt> switch:
+
+  ./script/plugin install http://svn.codahale.com/xhtml_content_type
+  
+Alternatively, you can just check the trunk out from the repository, if you're
+super-DIY.
+
+  cd path_to_rails_app
+  cd vendor/plugins
+  svn co http://svn.codahale.com/xhtml_content_type
+
+== Usage
+
+xhtml_content_type is super easy to use. Add the method
++sends_xhtml_with_correct_content_type+ to a specific controller, or to
+ApplicationController to make all controllers send XHTML properly:
+
+  class ApplicationController < ActionController::Base
+    sends_xhtml_with_correct_content_type
+  end
+
++sends_xhtml_with_correct_content_type+ also accepts standard filter-style
+conditions, if you need them:
+
+  class MySpecialController < ApplicationController
+    sends_xhtml_with_correct_content_type :except => [:seriously_weird_action]
+  end
+
+  class MyOtherSpecialController < ApplicationController
+    sends_xhtml_with_correct_content_type :only => [:the_only_regular_action]
+  end
+
+You can also explicitly specify an XHTML content type using this plugin:
+
+  def xhtml_only_action
+    render :content_type => :xhtml
+  end
+
+If you're declaring the content type in a <meta> element as well, you should do
+something like this:
+
+  <meta http-equiv="content-type" content="<%= controller.preferred_content_type %>; charset=UTF-8" />
+
+= The Implications of application/xhtml+xml
+
+1. If your markup isn't well-formed XML, browsers which process XHTML properly
+   (e.g., Firefox) will display an error message instead of your page. This
+   includes the XML prolog (<?xml version="1.0" ?>). You should be using
+   automated tests for XHTML validity and well-formedness; I've written a Rails
+   plugin called ResponsibleMarkup which handles all this and more:
+   http://svn.codahale.com/responsible_markup/trunk
+
+2. You need to declare a DOCTYPE and add a xmlns namespace attribute to your
+   <html> elements.
+
+3. You need to migrate your Javascript away from non-DOM methods. For a good
+   document.write() replacement, check out Ara Pehlivanian's work here:
+   http://arapehlivanian.com/2006/05/12/documentwrite-fix-for-real-xhtml/
+
+4. You need to stop using Javascript's innerHTML attribute and start using
+   createElement() and createTextNode().
+
+5. The only named entities that are safe are &lt;, &gt;, &amp;, &quot;, and
+   &apos;. &nbsp; will be interpreted as literally "&nbsp;" by many browsers.
+
+6. Any unescaped ampersands in URLs or text will kill the page.
+
+7. All <script> and <style> elements must be encapsulated in CDATA blocks.
+  Thankfully, the javascript_tag helper does this automatically.
+
+For a more in-depth overview of what serving XHTML as application/xhtml+xml
+entails, read Roger Johansson's article here:
+http://www.456bereastreet.com/archive/200501/the_perils_of_using_xhtml_properly/
+
+= Changelog
+
+* 2006-09-26: Added Seth Roby's fix for respond_to problems
+              (www.trainedchimpanzeeband.com/explodedclown/). Thanks, Seth!
+
+
+* 2006-05-24: I forgot that IE fronts like it can handle all MIME types (i.e.,
+              it optimistically sends Accept: */* but then chokes like a rookie
+              when it gets pure XHTML in return. Thanks, Microsoft, for this
+              wonderful albatross you've placed around the neck of web
+              innovation. Die. Anyhoo, that's fixed now. Yep.
+
+* 2006-05-23: First released.
