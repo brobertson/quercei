@@ -1,5 +1,10 @@
 == Querci ==
 
++ Quick Tips +
+
+To run Mongrel with a path prefix, you can't use 'script/server'.
+Instead, run 'mongrel_rails start --prefix=/path'
+
 This software is Copyright 2008 Bruce G. Robertson. 
 
 Querci is free software: you can redistribute it and/or modify
