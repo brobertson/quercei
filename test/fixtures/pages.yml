@@ -17,35 +17,53 @@ pages_001:
 pages_002: 
   name: Development
   permalink: development
-  updated_at: 2008-11-11 15:11:24
+  updated_at: 2008-11-18 12:26:10
   id: "8"
   content: |-
+    h2. Running Querci
     
+    _Querci_ is open source software, hosted at "GitHub":http://github.com/brobertson/querci/ It is built within the "Ruby on Rails":http://www.rubyonrails.org/ web application development framework. For the impatient, _Querci_ is available as a MacOS desktop application, built from the Rails code with the amazing "RoRGate":http://github.com/juanger/rorgate/wikis Download the latest version at "http://www.heml.org/releases/Querci/App":http://www.heml.org/releases/Querci/App/
+    
+    All versions of _Querci_ *require* that the graphviz program 'dot' be installed. On a Debian based Linux machine run @apt-get install graphviz@. Install "these":http://www.ryandesign.com/graphviz/ binaries for the MacOS platform.
+    
+    To run Git on any other OS, or as a server, follow these instructions, which pertain to most Rails applications:
+    # Download a local code repository ('clone' in git-speak) with the command @git clone git://github.com/brobertson/querci.git@. Github has many useful "guides":http://github.com/guides/home to using git.
+    # @cd querci@
+    # The copy from Github naturally has an empty database, so you have to populate it with the following commands: @rake db:migrate@ and @rake db:fixtures load@. 
+    # Run the server with the command @script/server@
+    # View the application on "http://localhost:3000":http://localhost:3000
     
     h2. Overview
     
     h3. Data Model
     
-    _Querci_ uses the "Ruby on Rails":http://www.rubyonrails.org/ web application development framework and is based on three data models: Documents, Words and Treebanks[1]. The 'document "database":/documents merely associates the document URN with an author and title. The "'words' database":/words identifies each word by document urn, sentence number within that document, and sequential number within the sentence, following the system used by the Perseus Project in its XML schema. It also provides the word's form.
+    The application is based on three data models: Documents, Words and Treebanks[1]. The 'document "database":/documents merely associates the document URN with an author and title. The "'words' database":/words identifies each word by document urn, sentence number within that document, and sequential number within the sentence, following the system used by the Perseus Project in its XML schema. It also provides the word's form.
     
-    The above two databases contain 'canonical' data, not user-generated data. The words and documents are therefore loaded into _Querci_ before the readers start their task of defining the syntactic relationships between the words in each sentence. In order to avoid having to deal with the database
-     directly, _Querci_ exploits a Rails means of loading data that is indifferent to the underlying database. Rails' powerful migration feature uses "yaml":http://www.yaml.org/ files to serialize database records. We provide a xslt file that transforms documents conforming to the Perseus 
-    Project's  treebank "XML schema":http://nlp.perseus.tufts.edu/syntax/treebank/1.5/data/treebank-1.5.xsd into yaml files conforming to the 'words' database in _Querci._ The resulting @words.yml@ file is installed under @querci/test/fixtures/word.yml@ and once the command @rake db:fixtures:
-    load TABLES=words@ is run, the word database will be loaded. 
+    The above two databases contain the data that is the basis of the editing work. These are therefore loaded into _Querci_ before the readers start their task of defining the syntactic relationships between the words in each sentence. In order to avoid having to deal with the database
+     directly, _Querci_ exploits Rails' powerful migration feature, a means of loading data that is indifferent to the underlying database. Migrations use "yaml":http://www.yaml.org/ files to serialize database records, so we provide a xslt file that transforms documents conforming to the Perseus 
+    Project's  treebank "XML schema":http://nlp.perseus.tufts.edu/syntax/treebank/1.5/data/treebank-1.5.xsd into yaml files conforming to the 'words' database in _Querci._ The resulting @words.yml@ file is installed under @querci/test/fixtures/word.yml@ and once the command <code>rake db:fixtures:
+    load TABLES=words</code> is run, the word database will be loaded. 
     
-    The (poorly-named) 'treebanks' database stores the information provided by readers. user's model of the grammar and sytanx of the sentence. Each 'treebank' row of this database includes the id of the user who asserts the association, the word being defined, its relation to a headword, and the database id of the headword. (There are database columns available to store the grammatical definition of the word in the compact form used in the Perseus schema, but the grammatical identification part of this project has been left undone because it is was considered easier than the graphical syntactic editor.)
+    The (poorly-named) 'treebanks' database stores the information provided by the user's model of the grammar and syntax of the sentence. Each 'treebank' row of this database includes the id of the user who asserts the association, the word being defined, its relation to a headword, and the database id of the headword. (There are database columns available to store the grammatical definition of the word in the compact form used in the Perseus schema, but the grammatical identification part of this project has been left undone because it is was considered easier than the graphical syntactic editor.)
     
     h3. User Interface
     
-    It would be possible to require users to enter data into the Treebanks database using a web form, but this would be not much more helpful to them  than hand-editing
+    It would be possible to require users to enter data into the Treebanks database using a web form, but this would be not much more helpful to them than hand-editing. _Querci_ provides editors with a more speedy and, it is hoped, intuitive, drag-and-drop interface. An editor indicates syntactic relations in the treebank by dragging the headword onto the dependent word. The nature of the relationship is indicated through a drop-down list of relations. For instance, in the sentence @Julius Fortunatam amat@, the editor selects the 'SUBJ' relation to indicate a subject, then drags the verb amat and drops it onto the noun Julius. This process will trigger an AJAX call to the addFromJS action in the Rails treebanks controller. In this way the relations are stored in the Treebanks database automatically. 
     
-    h3. Additional Requirements
+    Each time the editor changes the model of the syntactic relations of the sentence, _Querci_ draws a SVG graph of the sentence's syntax. The action that does this is the renderSentenceSVG method in the treebankscontroller.rb file. It begins with a SVG 'here' document that will be presented in the case that a dot executable cannot be found. It then finds all the treebank entries that pertain to the current sentence, sorts them in reading order and converts them to a string encoded in graphviz dot format. This is run through the dot executable, with the output set to SVG. 
+    
+    The resulting SVG file is first corrected so that it doesn't use dimensionless values for font size; then it has its XML header and DTD declaration removed because the XML will be inserted within the DOM of the sentence view page. Before the SVG is passed back to the client, the code also renames the @id@ elements of the graph nodes (which correspond to the words in the sentence). Dot gives these generic @ids@; however, the dot file assigns the @id@ column of the @word@ to the  (invisible) @title@ of each node. The code accesses this value in the SVG XML, prefixes it with 'SVG_'  and assigns the resulting string to the @id@ of the node, replacing the less useful generic 
+    
+    h3. Output
+    
+    _Querci_ outputs its data in an XML format at the address "http://localhost:3000/treebanks.xml":http://localhost:3000/treebanks.xml The schema is a superset of the one provided by the Perseus Project. Simply put, where Perseus project's schema has as its root a single @<treebank>@ element, _Querci_ outputs many of these as sibling elements, all contained in a root @<treebanks>@ element. This allows _Querci_ to output the data of many different editors who are using the same server but not necessarily collaborating with each other. 
+    
     
     h3. Local Configuration
     
     
     # The set of tags available in the drop-down menu are stored in the @tagset@ variable at the top of the @querci/app/controllers/sentence_controller.rb@ file. 
-    # The location of the @dot@ program must be indicated in the variable @dotcommand@ found in the @querci/app/controllers/treebank_controller.rb@ file.
+    # Many different variables pertaining to the layout of the graphs can be altered in the @querci/app/controllers/treebank_controller.rb@ file. Look for the @dotDescription@ variable. In the future these can be parameterized in a 'user settings' page.
     
     fn1. The application also includes the Users and Sessions models required by the "restful authentication":http://agilewebdevelopment.com/plugins/restful_authentication plugin. Finally, some of the documentation is stored in a Pages model using the "textile":http://hobix.com/textile/ markup language.
   created_at: 2008-11-11 13:52:37
