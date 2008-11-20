@@ -169,7 +169,7 @@ unless Treebank.exists?(:word_id => treebank.head_id, :user_id => params[:user_i
 end 
 dotDescription += "}"
 graphType = params[:graphType] || "dot"
-dotCommand = "/usr/local/graphviz/bin/" + "dot" + " -q -Tsvg "
+dotCommand = dotPath() + "dot" + " -q -Tsvg "
 gv=IO.popen(dotCommand,"w+")
 gv.puts dotDescription #"digraph G{", mystring, " }" 
 gv.close_write

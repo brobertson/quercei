@@ -25,7 +25,7 @@
 
    | <%= link_to "sign up", :controller => "users", :action => "new" %> 
   <% end %> 
-| <a href="/intro">Introduction</a> | <a href="/static/development">Development</a> | <a href="/static/contact">Contact</a></div>
+| <%= link_to "Introduction", :controller => "info", :action => "intro" %> | <%= link_to "development", :controller => "static", :action => "development" %> |  <%= link_to "contact", :controller => "static", :action => "contact" %></div>
 <p><span id="flasherror"><%= flash[:error] %></span><span id="flashnotice"><%= flash[:notice] %></span></p>
    <%= @content_for_layout %>
 

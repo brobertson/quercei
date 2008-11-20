@@ -12,12 +12,12 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :session
    map.activate '/activate/:activation_code', :controller => 'users', :action => 'activate', :activation_code => nil
 
-  map.signup '/signup', :controller => 'users', :action => 'new'
-  map.login '/login', :controller => 'sessions', :action => 'new'
-  map.logout '/logout', :controller => 'sessions', :action => 'destroy'
+  map.signup 'signup', :controller => 'users', :action => 'new'
+  map.login 'login', :controller => 'sessions', :action => 'new'
+  map.logout 'logout', :controller => 'sessions', :action => 'destroy'
   map.resource :session, :member => {:destroy => :get }
-  map.choose '/choose', :controller => 'documents', :action => 'choose'
-  map.choose '/dump', :controller => 'treebanks', :action => 'dumpToPerseus'
+  map.choose 'choose', :controller => 'documents', :action => 'choose'
+  map.choose 'dump', :controller => 'treebanks', :action => 'dumpToPerseus'
   
  map.with_options :controller => 'info' do |info|
    info.about 'about', :action => 'about'
