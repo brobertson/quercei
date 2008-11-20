@@ -155,13 +155,9 @@ END
  else
  @sentenceTree = Treebank.find(:all, :order => "word_id", :conditions => "sentence='"+params[:sentence] + "' and user_id = '" + params[:user_id].to_s + "'")
 
+#sort in sentence order so that the graph 'reads' from left to right
 @sentenceTree.sort! { |a,b| a.word.number <=> b.word.number }
-#stringIn =  String.new(params[:graph].to_s)
-#Replace all greater than entities with the actual symbol
-#mystring = CGI::unescape(stringIn)
-mystring= <<DOC 
-digraph G {size="5,3.5" node [fontname="Monaco", fontsize=8, margin="0.01, 0.01", color=blue, width=0.1, height=0.1]; node0[ label="this is a node with a very long name"]; node0 -> node1; node1 [style=filled]; node2 [style=filled, fillcolor=red]; node2 -> node0; }
-DOC
+
 dotDescription = <<DOC
  digraph G {size="9,5"  node [fontsize=8, fontname="Georgia", margin="0.005, 0.005", color=blue, width=0.1, height=0.1];
 DOC
@@ -342,16 +338,6 @@ sentence.add_element "word", {"lemma" => "NOT_IN_THIS_VERSION", "postag" => "NOT
     end
   end
 
-
-
-  def dumpToPerseus
-    bank = Treebank.find_by_user_id(params[:user_id], :order => "sentence, word_id")
-      respond_to do |format|
-        format.html # index.html.erb
-        format.xml  { render :xml => @treebanks }
-      end
-    end
-    
     
   # GET /treebanks/1
   # GET /treebanks/1.xml
