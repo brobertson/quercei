@@ -237,7 +237,9 @@ def listBankedWords
   
   def deleteByWordId
     bank = Treebank.find_by_user_id_and_word_id(params[:user_id], params[:word_id])
-    bank.destroy();
+    unless bank == nil 
+      bank.destroy();
+    end
     renderSentenceSVG();
   end
   
