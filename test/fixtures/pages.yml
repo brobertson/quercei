@@ -2,9 +2,14 @@
 pages_001: 
   name: Contact
   permalink: contact
-  updated_at: 2008-11-11 13:48:08
+  updated_at: 2008-11-22 19:48:51
   id: "7"
   content: |-
+    Querci development is planned at the Assembla "Project Page":http://www.assembla.com/spaces/querci/milestones, which reports development events through the 'querci' twitter user. 
+    
+    Bug report "tickets":http://www.assembla.com/spaces/querci/tickets should be submitted online.
+    
+    The developer can be contacted at:<br/>
     Prof. Bruce Robertson <br/>
     Dept. of Classics, Mount Allison University<br/>
     #414, Hart Hall <br/>
@@ -17,14 +22,14 @@ pages_001:
 pages_002: 
   name: Development
   permalink: development
-  updated_at: 2008-11-18 12:26:10
+  updated_at: 2008-11-22 16:38:13
   id: "8"
   content: |-
     h2. Running Querci
     
-    _Querci_ is open source software, hosted at "GitHub":http://github.com/brobertson/querci/ It is built within the "Ruby on Rails":http://www.rubyonrails.org/ web application development framework. For the impatient, _Querci_ is available as a MacOS desktop application, built from the Rails code with the amazing "RoRGate":http://github.com/juanger/rorgate/wikis Download the latest version at "http://www.heml.org/releases/Querci/App":http://www.heml.org/releases/Querci/App/
+    _Querci_ is open source software, hosted at "GitHub":http://github.com/brobertson/querci/ It is built within the "Ruby on Rails":http://www.rubyonrails.org/ web application development framework. Project planning is hosted at "Assembla":http://www.assembla.com/spaces/querci/milestones. 
     
-    All versions of _Querci_ *require* that the graphviz program 'dot' be installed. On a Debian based Linux machine run @apt-get install graphviz@. Install "these":http://www.ryandesign.com/graphviz/ binaries for the MacOS platform.
+    All versions of _Querci_ *require* that the graphviz program 'dot' be installed on the server. On a Debian based Linux machine run @apt-get install graphviz@. Install "these":http://www.ryandesign.com/graphviz/ binaries for the MacOS platform.
     
     To run Git on any other OS, or as a server, follow these instructions, which pertain to most Rails applications:
     # Download a local code repository ('clone' in git-speak) with the command @git clone git://github.com/brobertson/querci.git@. Github has many useful "guides":http://github.com/guides/home to using git.

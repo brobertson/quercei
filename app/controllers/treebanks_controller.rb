@@ -158,6 +158,10 @@ END
 #sort in sentence order so that the graph 'reads' from left to right
 @sentenceTree.sort! { |a,b| a.word.number <=> b.word.number }
 
+mystring= <<DOC
+digraph G {size="5,3.5" node [fontname="Monaco", fontsize=8, margin="0.01, 0.01", color=blue, width=0.1, height=0.1]; node0[ label="this is a node with a very long name"]; node0 -> node1; node1 [style=filled]; node2 [style=filled, fillcolor=red]; node2 -> node0; }
+DOC
+
 dotDescription = <<DOC
  digraph G {size="9,5"  node [fontsize=8, fontname="Georgia", margin="0.005, 0.005", color=blue, width=0.1, height=0.1];
 DOC
