@@ -51,8 +51,8 @@ Rails::Initializer.run do |config|
     :session_key => '_querci_session',
     :secret      => 'd662e1670b7f09ca7ad5d17b71386683ea38c9206e98d746ff1d5a9de3ebfa1955c2875c41754c39a93b616cedf76f437649ea72ee318f9fea7541ebd2ec8f61'
   }
-  config.gem "RedCloth", :version => ">= 3.0.4", :source => "http://code.whytheluckystiff.net/"
-  config.gem "mislav-will_paginate", :version => ">= 2.3.5", :lib => "will_paginate"
+#  config.gem "RedCloth-3", :version => ">= 1.0.0", :source => "http://code.whytheluckystiff.net/"
+  config.gem "mislav-will_paginate", :version => ">= 2.3.5", :lib => "will_paginate", :source => 'http://gems.github.com'
   # Use the database for sessions instead of the cookie-based default,
   # which shouldn't be used to store highly confidential information
   # (create the session table with "rake db:sessions:create")
