@@ -68,12 +68,12 @@ catch (e) {
 }//end try
 
 function updateText() {
-//alert("clearText");
 clearText();
 var Evaluator = new XPathEvaluator();
 var counter = 0;
 var completedWords = new Array();
 var iterator = Evaluator.evaluate('//svg:g[@class="node"]',$('representation'), nsResolver, XPathResult.ANY_TYPE, null );
+if (iterator) {
 try {
    var thisNode = iterator.iterateNext();
   while (thisNode) {
@@ -95,7 +95,16 @@ element.innerHTML = completedWords.length;
 catch (e) {
   alert( 'Error:  ' + e );
 }
-
+} 
+/* end if the iterator from xpath actually exists
+* if id doesn't, that means this is the first whack
+*  at this document, and therefore an svg view has never been
+*  created. In that case, the number of completed words is
+*  necessarily 0, so we'll record that here
+*/
+else {
+  $('completedWords') = '0';
+ }
 }
 
 function nsResolver(prefix) {

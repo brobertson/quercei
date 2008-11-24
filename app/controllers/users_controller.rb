@@ -15,13 +15,11 @@ class UsersController < ApplicationController
     @user.save
     if @user.errors.empty?
       self.current_user = @user
-      redirect_back_or_default('/choose')
+       redirect_to :controller => 'documents', :action => 'choose'
       flash[:notice] = "Thanks for signing up!"
     else
       flash.now[:error] = "There was a problem with your signup: " #+ @user.errors[0]
         render :action => :new
-      #redirect_to ('/signup')   
-      #flash[:error] = "There was a problem with "@user.errors[0]
 
     end
   end

@@ -1,8 +1,7 @@
 class TreebanksController < ApplicationController
-    include REXML
     before_filter :login_required
-
- 
+       require "rexml/document"
+include REXML 
   # GET /treebanks.xml
 require 'cgi'
  
@@ -237,7 +236,9 @@ def listBankedWords
   
   def deleteByWordId
     bank = Treebank.find_by_user_id_and_word_id(params[:user_id], params[:word_id])
-    bank.destroy();
+    unless bank == nil 
+      bank.destroy();
+    end
     renderSentenceSVG();
   end
   
@@ -283,8 +284,6 @@ def listBankedWords
   end
 
   def index
-   require "rexml/document"
-
     string = <<EOF
     <treebanks
     	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -319,7 +318,7 @@ EOF
    if old_sentence_number != t.word.sentence
      old_sentence_number = t.word.sentence
      sentence = Element.new "sentence"
-     sentence.attributes["id"] = t.word.sentence
+     sentence.attributes["id"] = t.word.sentence.to_s
      sentence.attributes["document_id"] = t.word.document_urn
      sentence.attributes["subdoc"] =t.word.span
      sentence.attributes["span"] = t.word.subdoc
