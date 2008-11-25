@@ -35,7 +35,7 @@ module AuthenticatedSystem
       if current_user == nil 
         false
         else
-          current_user.login = "admin"
+          current_user.login == "admin"
         end
     end
 
