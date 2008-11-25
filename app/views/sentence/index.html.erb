@@ -6,7 +6,8 @@ function updateRepresentation() { <%= remote_function(
         :action=>"renderSentenceSVG",
        :user_id=>current_user.id,
        :sentence=>@sentence_number,
-       :graphType => "dot"}, 
+       :graphType => "dot", 
+       :document_urn =>@document_urn}, 
   :complete => "updateText();"
 
   )
@@ -142,7 +143,7 @@ remote_function (
 </script>
 <span class="word" onmouseover="highlightSVG(<%=h word.id %>);" onmouseout="deHighlightSVG(<%=h word.id %>);" id="<%=h word.id %>"><%=h word.form %></span><span class="space"> </span>
 <%= draggable_element(word.id.to_s, :revert => true) %>
-<%= drop_receiving_element word.id.to_s, :accept => "word", :update => "representation", :hoverclass => "hover", :url => {  :controller => "treebanks", :action => "addFromJS"}, :with => "'&relation=' + $F('relation') + '&head_id=' + element.id  + '&word_id=" + word.id.to_s + "&user_id=" + current_user.id.to_s + "&sentence=" + @sentence_number.to_s + "'", :complete => "updateText();"   %>
+<%= drop_receiving_element word.id.to_s, :accept => "word", :update => "representation", :hoverclass => "hover", :url => {  :controller => "treebanks", :action => "addFromJS"}, :with => "'&relation=' + $F('relation') + '&head_id=' + element.id  + '&word_id=" + word.id.to_s + "&user_id=" + current_user.id.to_s + "&sentence=" + @sentence_number.to_s + "&document_urn=" + @document_urn  + "'", :complete => "updateText();"   %>
 
 <% end %>
 . <code>[<span id="completedWords"></span>/<span id="totalWords"></span>]</code>

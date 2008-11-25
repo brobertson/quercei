@@ -152,7 +152,7 @@ def renderSentenceSVG
    </svg>
 END
  else
- @sentenceTree = Treebank.find(:all, :order => "word_id", :conditions => "sentence='"+params[:sentence] + "' and user_id = '" + params[:user_id].to_s + "'")
+ @sentenceTree = Treebank.find(:all, :order => "word_id", :conditions => "sentence='"+params[:sentence] + "' and user_id = '" + params[:user_id].to_s + "' and document_urn= '" + params[:document_urn].to_s + "'")
 
 #sort in sentence order so that the graph 'reads' from left to right
 @sentenceTree.sort! { |a,b| a.word.number <=> b.word.number }
@@ -252,6 +252,7 @@ def listBankedWords
    bank.relation = params[:relation]
    bank.head_id = params[:head_id]
    bank.sentence = params[:sentence]
+   bank.document_urn = params[:document_urn]
    bank.save()
    # if the reverse relationship exists in the database, then delete it because it is not
    # possible for words to be in reciprocal relationship.
