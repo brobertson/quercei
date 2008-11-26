@@ -1,5 +1,30 @@
 == Querci ==
 
++ Install +
+If you want to add more texts to the samples, issue the following
+shell command:
+xsltproc xslt/perseus_tbank_to_yml.xsl TREEBANK_FILE >> test/fixtures/words.yml
+In order to access the sentences of this document, you will need
+to add it by hand to the 'Documents' database.
+
+The following instructions pertain in all cases:
+
+From within the 'querci' directory, build the database schema and 
+populate the database with sample data by running:
+rake db:migrate
+rake db:fixtures:load 
+
+Then start the server with:
+script/server
+
+You may be required to install 'gems'. The following command will 
+do this:
+rake gems:install
+
+If you are on a linux machine and would like the gems installed in
+the common ruby lib files, run
+sudo rake gems:install instead
+
 + Quick Tips +
 
 To run Mongrel with a path prefix, you can't use 'script/server'.
