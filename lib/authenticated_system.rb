@@ -31,14 +31,9 @@ module AuthenticatedSystem
     #    current_user.login != "bob"
     #  end
     def authorized?
-      #logged_in?
-      if current_user == nil 
-        false
-        else
-          current_user.login == "admin"
-        end
-    end
-
+       logged_in?
+     end
+     
     # Filter method to enforce a login requirement.
     #
     # To require logins for all actions, use this in your controllers:
