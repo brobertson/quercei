@@ -1,4 +1,4 @@
-== Querci ==
+== Quercei ==
 
 + Install +
 If you want to add more texts to the samples, issue the following
@@ -9,7 +9,7 @@ to add it by hand to the 'Documents' database.
 
 The following instructions pertain in all cases:
 
-From within the 'querci' directory, build the database schema and 
+From within the 'quercei' directory, build the database schema and 
 populate the database with sample data by running:
 rake db:migrate
 rake db:fixtures:load 
@@ -32,7 +32,7 @@ Instead, run 'mongrel_rails start --prefix=/path'
 
 This software is Copyright 2008 Bruce G. Robertson. 
 
-Querci is free software: you can redistribute it and/or modify
+Quercei is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
  the Free Software Foundation, either version 3 of the License, or
  (at your option) any later version.
