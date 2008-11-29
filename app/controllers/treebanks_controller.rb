@@ -111,7 +111,7 @@ def renderSentenceSVG
             sodipodi:role="line"
             x="82.85714"
             y="66.647896"
-            id="tspan2387">Querci could not find graphviz 'dot' on the server.</tspan><tspan
+            id="tspan2387">Quercei could not find graphviz 'dot' on the server.</tspan><tspan
             sodipodi:role="line"
             x="82.85714"
             y="81.647896"

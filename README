@@ -1,4 +1,29 @@
-== Querci ==
+== Quercei ==
+
++ Install +
+If you want to add more texts to the samples, issue the following
+shell command:
+xsltproc xslt/perseus_tbank_to_yml.xsl TREEBANK_FILE >> test/fixtures/words.yml
+In order to access the sentences of this document, you will need
+to add it by hand to the 'Documents' database.
+
+The following instructions pertain in all cases:
+
+From within the 'quercei' directory, build the database schema and 
+populate the database with sample data by running:
+rake db:migrate
+rake db:fixtures:load 
+
+Then start the server with:
+script/server
+
+You may be required to install 'gems'. The following command will 
+do this:
+rake gems:install
+
+If you are on a linux machine and would like the gems installed in
+the common ruby lib files, run
+sudo rake gems:install instead
 
 + Quick Tips +
 
@@ -7,7 +32,7 @@ Instead, run 'mongrel_rails start --prefix=/path'
 
 This software is Copyright 2008 Bruce G. Robertson. 
 
-Querci is free software: you can redistribute it and/or modify
+Quercei is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
  the Free Software Foundation, either version 3 of the License, or
  (at your option) any later version.
