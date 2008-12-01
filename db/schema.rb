@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081119141851) do
+ActiveRecord::Schema.define(:version => 20081125012409) do
 
   create_table "documents", :force => true do |t|
     t.string   "urn"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(:version => 20081119141851) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "sentence"
+    t.string   "document_urn"
   end
 
   create_table "users", :force => true do |t|
