@@ -1,7 +1,6 @@
 class CreateWords < ActiveRecord::Migration
   def self.up
     create_table :words do |t|
-      t.integer :id
       t.string :form
       t.integer :sentence
       t.string :document_urn

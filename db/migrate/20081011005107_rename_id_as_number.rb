@@ -1,11 +1,11 @@
 class RenameIdAsNumber < ActiveRecord::Migration
   def self.up
-   rename_column :words, :id, :number
+   add_column :words,  :number, :integer
    Word.reset_column_information()
   end
 
   def self.down
-   rename_column :words, :number, :id
+   remove_column :words, :number
    Word.reset_column_information()
   end
 end

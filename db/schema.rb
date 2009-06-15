@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081125012409) do
+ActiveRecord::Schema.define(:version => 20090614191551) do
 
   create_table "documents", :force => true do |t|
     t.string   "urn"
@@ -55,7 +55,6 @@ ActiveRecord::Schema.define(:version => 20081125012409) do
   end
 
   create_table "words", :force => true do |t|
-    t.integer  "number",        :null => false
     t.string   "form"
     t.integer  "sentence"
     t.string   "document_urn"
@@ -63,7 +62,10 @@ ActiveRecord::Schema.define(:version => 20081125012409) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "subdoc"
+    t.integer  "number"
     t.string   "span"
+    t.integer  "perseusId"
+    t.integer  "lang_id"
   end
 
 end

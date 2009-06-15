@@ -1,13 +1,769 @@
---- 
-documents_001: 
-  title: Commentarii de Bello Gallico Liber II
-  author: Julius Caesar
+---
+documents_0:
+  urn: Perseus:text:1999.01.0001
+  title: Speeches
+  author: Aeschines
+documents_1:
+  urn: Perseus:text:1999.01.0003
+  title: Perseus:text:1999.01.0003
+  author: Perseus:text:1999.01.0003
+documents_2:
+  urn: Perseus:text:1999.01.0005
+  title: Perseus:text:1999.01.0005
+  author: Perseus:text:1999.01.0005
+documents_3:
+  urn: Perseus:text:1999.01.0007
+  title: Perseus:text:1999.01.0007
+  author: Perseus:text:1999.01.0007
+documents_4:
+  urn: Perseus:text:1999.01.0009
+  title: Perseus:text:1999.01.0009
+  author: Perseus:text:1999.01.0009
+documents_5:
+  urn: Perseus:text:1999.01.0011
+  title: Perseus:text:1999.01.0011
+  author: Perseus:text:1999.01.0011
+documents_6:
+  urn: Perseus:text:1999.01.0013
+  title: Perseus:text:1999.01.0013
+  author: Perseus:text:1999.01.0013
+documents_7:
+  urn: Perseus:text:1999.01.0015
+  title: Perseus:text:1999.01.0015
+  author: Perseus:text:1999.01.0015
+documents_8:
+  urn: Perseus:text:1999.01.0017
+  title: Perseus:text:1999.01.0017
+  author: Perseus:text:1999.01.0017
+documents_9:
+  urn: Perseus:text:1999.01.0019
+  title: Perseus:text:1999.01.0019
+  author: Perseus:text:1999.01.0019
+documents_10:
+  urn: Perseus:text:1999.01.0021
+  title: Library and Epitome
+  author: Apollodorus
+documents_11:
+  urn: Perseus:text:1999.01.0023
+  title: Acharnians
+  author: Aristophanes
+documents_12:
+  urn: Perseus:text:1999.01.0025
+  title: Birds
+  author: Aristophanes
+documents_13:
+  urn: Perseus:text:1999.01.0027
+  title: Clouds
+  author: Aristophanes
+documents_14:
+  urn: Perseus:text:1999.01.0029
+  title: Ecclesiazusae
+  author: Aristophanes
+documents_15:
+  urn: Perseus:text:1999.01.0031
+  title: Frogs
+  author: Aristophanes
+documents_16:
+  urn: Perseus:text:1999.01.0033
+  title: Knights
+  author: Aristophanes
+documents_17:
+  urn: Perseus:text:1999.01.0035
+  title: Perseus:text:1999.01.0035
+  author: Perseus:text:1999.01.0035
+documents_18:
+  urn: Perseus:text:1999.01.0037
+  title: Peace
+  author: Aristophanes
+documents_19:
+  urn: Perseus:text:1999.01.0039
+  title: Plutus
+  author: Aristophanes
+documents_20:
+  urn: Perseus:text:1999.01.0041
+  title: Thesmophoriazusae
+  author: Aristophanes
+documents_21:
+  urn: Perseus:text:1999.01.0043
+  title: Wasps
+  author: Aristophanes
+documents_22:
+  urn: Perseus:text:1999.01.0045
+  title: Athenian Constitution
+  author: Aristotle
+documents_23:
+  urn: Perseus:text:1999.01.0047
+  title: Perseus:text:1999.01.0047
+  author: Perseus:text:1999.01.0047
+documents_24:
+  urn: Perseus:text:1999.01.0049
+  title: Eudemian Ethics
+  author: Aristotle
+documents_25:
+  urn: Perseus:text:1999.01.0051
+  title: Perseus:text:1999.01.0051
+  author: Perseus:text:1999.01.0051
+documents_26:
+  urn: Perseus:text:1999.01.0053
+  title: Nicomachean Ethics
+  author: Aristotle
+documents_27:
+  urn: Perseus:text:1999.01.0055
+  title: Perseus:text:1999.01.0055
+  author: Perseus:text:1999.01.0055
+documents_28:
+  urn: Perseus:text:1999.01.0057
+  title: Perseus:text:1999.01.0057
+  author: Perseus:text:1999.01.0057
+documents_29:
+  urn: Perseus:text:1999.01.0059
+  title: Perseus:text:1999.01.0059
+  author: Perseus:text:1999.01.0059
+documents_30:
+  urn: Perseus:text:1999.01.0061
+  title: Virtues and Vices
+  author: Aristotle
+documents_31:
+  urn: Perseus:text:1999.01.0063
+  title: Odes
+  author: Bacchylides
+documents_32:
+  urn: Perseus:text:1999.01.0065
+  title: Perseus:text:1999.01.0065
+  author: Perseus:text:1999.01.0065
+documents_33:
+  urn: Perseus:text:1999.01.0067
+  title: Perseus:text:1999.01.0067
+  author: Perseus:text:1999.01.0067
+documents_34:
+  urn: Perseus:text:1999.01.0069
+  title: Speeches 1-10
+  author: Demosthenes
+documents_35:
+  urn: Perseus:text:1999.01.0071
+  title: Speeches 11-20
+  author: Demosthenes
+documents_36:
+  urn: Perseus:text:1999.01.0073
+  title: Speeches 21-30
+  author: Demosthenes
+documents_37:
+  urn: Perseus:text:1999.01.0075
+  title: Speeches 31-40
+  author: Demosthenes
+documents_38:
+  urn: Perseus:text:1999.01.0077
+  title: Perseus:text:1999.01.0077
+  author: Perseus:text:1999.01.0077
+documents_39:
+  urn: Perseus:text:1999.01.0079
+  title: Perseus:text:1999.01.0079
+  author: Perseus:text:1999.01.0079
+documents_40:
+  urn: Perseus:text:1999.01.0081
+  title: Perseus:text:1999.01.0081
+  author: Perseus:text:1999.01.0081
+documents_41:
+  urn: Perseus:text:1999.01.0083
+  title: Perseus:text:1999.01.0083
+  author: Perseus:text:1999.01.0083
+documents_42:
+  urn: Perseus:text:1999.01.0085
+  title: Perseus:text:1999.01.0085
+  author: Perseus:text:1999.01.0085
+documents_43:
+  urn: Perseus:text:1999.01.0087
+  title: Perseus:text:1999.01.0087
+  author: Perseus:text:1999.01.0087
+documents_44:
+  urn: Perseus:text:1999.01.0089
+  title: Perseus:text:1999.01.0089
+  author: Perseus:text:1999.01.0089
+documents_45:
+  urn: Perseus:text:1999.01.0091
+  title: Bacchae
+  author: Euripides
+documents_46:
+  urn: Perseus:text:1999.01.0093
+  title: Perseus:text:1999.01.0093
+  author: Perseus:text:1999.01.0093
+documents_47:
+  urn: Perseus:text:1999.01.0095
+  title: Electra
+  author: Euripides
+documents_48:
+  urn: Perseus:text:1999.01.0097
+  title: Hecuba
+  author: Euripides
+documents_49:
+  urn: Perseus:text:1999.01.0099
+  title: Helen
+  author: Euripides
+documents_50:
+  urn: Perseus:text:1999.01.0101
+  title: Heracles
+  author: Euripides
+documents_51:
+  urn: Perseus:text:1999.01.0103
+  title: Perseus:text:1999.01.0103
+  author: Perseus:text:1999.01.0103
+documents_52:
+  urn: Perseus:text:1999.01.0105
+  title: Perseus:text:1999.01.0105
+  author: Perseus:text:1999.01.0105
+documents_53:
+  urn: Perseus:text:1999.01.0107
+  title: Iphigenia in Aulis
+  author: Euripides
+documents_54:
+  urn: Perseus:text:1999.01.0109
+  title: Ion
+  author: Euripides
+documents_55:
+  urn: Perseus:text:1999.01.0111
+  title: Iphigenia in Tauris
+  author: Euripides
+documents_56:
+  urn: Perseus:text:1999.01.0113
+  title: Perseus:text:1999.01.0113
+  author: Perseus:text:1999.01.0113
+documents_57:
+  urn: Perseus:text:1999.01.0115
+  title: Orestes
+  author: Euripides
+documents_58:
+  urn: Perseus:text:1999.01.0117
+  title: Phoenissae
+  author: Euripides
+documents_59:
+  urn: Perseus:text:1999.01.0119
+  title: Rhesus
+  author: Euripides
+documents_60:
+  urn: Perseus:text:1999.01.0121
+  title: Suppliants
+  author: Euripides
+documents_61:
+  urn: Perseus:text:1999.01.0123
+  title: The Trojan Women
+  author: Euripides
+documents_62:
+  urn: Perseus:text:1999.01.0125
+  title: The Histories
+  author: Herodotus
+documents_63:
+  urn: Perseus:text:1999.01.0127
+  title: Shield of Heracles
+  author: Hesiod
+documents_64:
+  urn: Perseus:text:1999.01.0129
+  title: Theogony
+  author: Hesiod
+documents_65:
+  urn: Perseus:text:1999.01.0131
+  title: Works and Days
+  author: Hesiod
+documents_66:
+  urn: Perseus:text:1999.01.0133
+  title: Iliad
+  author: Homer
+documents_67:
+  urn: Perseus:text:1999.01.0135
+  title: Odyssey
+  author: Homer
+documents_68:
+  urn: Perseus:text:1999.01.0137
+  title: Homeric Hymns
+  author: Perseus:text:1999.01.0137
+documents_69:
+  urn: Perseus:text:1999.01.0139
+  title: Perseus:text:1999.01.0139
+  author: Perseus:text:1999.01.0139
+documents_70:
+  urn: Perseus:text:1999.01.0141
+  title: Perseus:text:1999.01.0141
+  author: Perseus:text:1999.01.0141
+documents_71:
+  urn: Perseus:text:1999.01.0143
+  title: Perseus:text:1999.01.0143
+  author: Perseus:text:1999.01.0143
+documents_72:
+  urn: Perseus:text:1999.01.0145
+  title: Antiquitates Judaicae
+  author: Flavius Josephus
+documents_73:
+  urn: Perseus:text:1999.01.0147
+  title: De bello Judaico libri vii
+  author: Flavius Josephus
+documents_74:
+  urn: Perseus:text:1999.01.0149
+  title: Josephi vita
+  author: Flavius Josephus
+documents_75:
+  urn: Perseus:text:1999.01.0151
+  title: Perseus:text:1999.01.0151
+  author: Perseus:text:1999.01.0151
+documents_76:
+  urn: Perseus:text:1999.01.0153
+  title: Perseus:text:1999.01.0153
+  author: Perseus:text:1999.01.0153
+documents_77:
+  urn: Perseus:text:1999.01.0155
+  title: New Testament
+  author: Perseus:text:1999.01.0155
+documents_78:
+  urn: Perseus:text:1999.01.0157
+  title: Perseus:text:1999.01.0157
+  author: Perseus:text:1999.01.0157
+documents_79:
+  urn: Perseus:text:1999.01.0159
+  title: Description of Greece
+  author: Pausanias
+documents_80:
+  urn: Perseus:text:1999.01.0161
+  title: Perseus:text:1999.01.0161
+  author: Perseus:text:1999.01.0161
+documents_81:
+  urn: Perseus:text:1999.01.0163
+  title: Epistles
+  author: Plato
+documents_82:
+  urn: Perseus:text:1999.01.0165
+  title: Laws
+  author: Plato
+documents_83:
+  urn: Perseus:text:1999.01.0167
+  title: Republic
+  author: Plato
+documents_84:
+  urn: Perseus:text:1999.01.0169
+  title: Euthyphro, Apology, Crito, Phaedo
+  author: Plato
+documents_85:
+  urn: Perseus:text:1999.01.0171
+  title: Cratylus, Theaetetus, Sophist, Statesman
+  author: Plato
+documents_86:
+  urn: Perseus:text:1999.01.0173
+  title: Parmenides, Philebus, Symposium, Phaedrus
+  author: Plato
+documents_87:
+  urn: Perseus:text:1999.01.0175
+  title: Alcibiades 1, Alcibiades 2, Hipparchus, Lovers, Theages, Charmides, Laches, Lysis
+  author: Plato
+documents_88:
+  urn: Perseus:text:1999.01.0177
+  title: Euthydemus, Protagoras, Gorgias, Meno
+  author: Plato
+documents_89:
+  urn: Perseus:text:1999.01.0179
+  title: Hippias Major, Hippias Minor, Ion, Menexenus, Cleitophon, Timaeus, Critias, Minos, Epinomis
+  author: Plato
+documents_90:
+  urn: Perseus:text:1999.01.0181
+  title: Lives
+  author: Plutarch
+documents_91:
+  urn: Perseus:text:1999.01.0183
+  title: Ajax
+  author: Sophocles
+documents_92:
+  urn: Perseus:text:1999.01.0185
+  title: Antigone
+  author: Sophocles
+documents_93:
+  urn: Perseus:text:1999.01.0187
+  title: Electra
+  author: Sophocles
+documents_94:
+  urn: Perseus:text:1999.01.0189
+  title: Oedipus at Colonus
+  author: Sophocles
+documents_95:
+  urn: Perseus:text:1999.01.0191
+  title: Oedipus Tyrannus
+  author: Sophocles
+documents_96:
+  urn: Perseus:text:1999.01.0193
+  title: Philoctetes
+  author: Sophocles
+documents_97:
+  urn: Perseus:text:1999.01.0195
+  title: Trachiniae
+  author: Sophocles
+documents_98:
+  urn: Perseus:text:1999.01.0197
+  title: Geography
+  author: Strabo
+documents_99:
+  urn: Perseus:text:1999.01.0199
+  title: Perseus:text:1999.01.0199
+  author: Perseus:text:1999.01.0199
+documents_100:
+  urn: Perseus:text:1999.01.0201
+  title: Perseus:text:1999.01.0201
+  author: Perseus:text:1999.01.0201
+documents_101:
+  urn: Perseus:text:1999.01.0203
+  title: Perseus:text:1999.01.0203
+  author: Perseus:text:1999.01.0203
+documents_102:
+  urn: Perseus:text:1999.01.0205
+  title: Perseus:text:1999.01.0205
+  author: Perseus:text:1999.01.0205
+documents_103:
+  urn: Perseus:text:1999.01.0207
+  title: Perseus:text:1999.01.0207
+  author: Perseus:text:1999.01.0207
+documents_104:
+  urn: Perseus:text:1999.01.0209
+  title: Perseus:text:1999.01.0209
+  author: Perseus:text:1999.01.0209
+documents_105:
+  urn: Perseus:text:1999.01.0211
+  title: Perseus:text:1999.01.0211
+  author: Perseus:text:1999.01.0211
+documents_106:
+  urn: Perseus:text:1999.01.0213
+  title: Perseus:text:1999.01.0213
+  author: Perseus:text:1999.01.0213
+documents_107:
+  urn: Perseus:text:1999.01.0215
+  title: Contra Apionem
+  author: Flavius Josephus
+documents_108:
+  urn: Perseus:text:1999.01.0220
+  title: Ichneutae
+  author: Sophocles
+documents_109:
+  urn: Perseus:text:1999.01.0225
+  title: Characters
+  author: Theophrastus
+documents_110:
+  urn: Perseus:text:1999.01.0226
+  title: Hymns and Epigrams
+  author: Callimachus
+documents_111:
+  urn: Perseus:text:1999.01.0227
+  title: Argonautica
+  author: Apollonius Rhodius
+documents_112:
+  urn: Perseus:text:1999.01.0228
+  title: Idylls
+  author: Theocritus
+documents_113:
+  urn: Perseus:text:1999.01.0229
+  title: The Foreign Wars
+  author: Appian
+documents_114:
+  urn: Perseus:text:1999.01.0231
+  title: The Civil Wars
+  author: Appian
+documents_115:
+  urn: Perseus:text:1999.01.0233
+  title: Histories
+  author: Polybius
+documents_116:
+  urn: Perseus:text:1999.01.0235
+  title: Works
+  author: Epictetus
+documents_117:
+  urn: Perseus:text:1999.01.0245
+  title: Perseus:text:1999.01.0245
+  author: Perseus:text:1999.01.0245
+documents_118:
   urn: Perseus:text:1999.02.0002
-documents_002: 
-  title: Aeneid VI
-  author: Publius Vergilius Maro
+  title: De bello Gallico
+  author: C. Julius Caesar
+documents_119:
+  urn: Perseus:text:1999.02.0003
+  title: Carmina
+  author: C. Valerius Catullus
+documents_120:
+  urn: Perseus:text:1999.02.0007
+  title: Letters to and from Brutus
+  author: M. Tullius Cicero
+documents_121:
+  urn: Perseus:text:1999.02.0008
+  title: Letters to Atticus
+  author: M. Tullius Cicero
+documents_122:
+  urn: Perseus:text:1999.02.0009
+  title: Epistulae ad Familiares
+  author: M. Tullius Cicero
+documents_123:
+  urn: Perseus:text:1999.02.0010
+  title: Orationes
+  author: M. Tullius Cicero
+documents_124:
+  urn: Perseus:text:1999.02.0011
+  title: Orationes
+  author: M. Tullius Cicero
+documents_125:
+  urn: Perseus:text:1999.02.0012
+  title: Orationes
+  author: M. Tullius Cicero
+documents_126:
+  urn: Perseus:text:1999.02.0013
+  title: Orationes
+  author: M. Tullius Cicero
+documents_127:
+  urn: Perseus:text:1999.02.0014
+  title: Orationes
+  author: M. Tullius Cicero
+documents_128:
+  urn: Perseus:text:1999.02.0015
+  title: Orationes
+  author: M. Tullius Cicero
+documents_129:
+  urn: Perseus:text:1999.02.0016
+  title: Essay on Running for Consul
+  author: Q. Tullius Cicero
+documents_130:
+  urn: Perseus:text:1999.02.0017
+  title: Letters to and from Quintus
+  author: M. Tullius Cicero
+documents_131:
+  urn: Perseus:text:1999.02.0024
+  title: Carmina
+  author: Q. Horatius Flaccus
+documents_132:
+  urn: Perseus:text:1999.02.0027
+  title: Ab urbe condita
+  author: Titus Livius
+documents_133:
+  urn: Perseus:text:1999.02.0029
+  title: Metamorphoses
+  author: P. Ovidius Naso
+documents_134:
+  urn: Perseus:text:1999.02.0030
+  title: Amphitruo
+  author: T. Maccius Plautus
+documents_135:
+  urn: Perseus:text:1999.02.0031
+  title: Asinaria
+  author: T. Maccius Plautus
+documents_136:
+  urn: Perseus:text:1999.02.0032
+  title: Aulularia
+  author: T. Maccius Plautus
+documents_137:
+  urn: Perseus:text:1999.02.0033
+  title: Bacchides
+  author: T. Maccius Plautus
+documents_138:
+  urn: Perseus:text:1999.02.0034
+  title: Captivi
+  author: T. Maccius Plautus
+documents_139:
+  urn: Perseus:text:1999.02.0035
+  title: Casina
+  author: T. Maccius Plautus
+documents_140:
+  urn: Perseus:text:1999.02.0036
+  title: Cistellaria
+  author: T. Maccius Plautus
+documents_141:
+  urn: Perseus:text:1999.02.0037
+  title: Curculio
+  author: T. Maccius Plautus
+documents_142:
+  urn: Perseus:text:1999.02.0038
+  title: Epidicus
+  author: T. Maccius Plautus
+documents_143:
+  urn: Perseus:text:1999.02.0039
+  title: Menaechmi
+  author: T. Maccius Plautus
+documents_144:
+  urn: Perseus:text:1999.02.0040
+  title: Mercator
+  author: T. Maccius Plautus
+documents_145:
+  urn: Perseus:text:1999.02.0041
+  title: Miles Gloriosus
+  author: T. Maccius Plautus
+documents_146:
+  urn: Perseus:text:1999.02.0042
+  title: Mostellaria
+  author: T. Maccius Plautus
+documents_147:
+  urn: Perseus:text:1999.02.0043
+  title: Persa
+  author: T. Maccius Plautus
+documents_148:
+  urn: Perseus:text:1999.02.0044
+  title: Poenulus
+  author: T. Maccius Plautus
+documents_149:
+  urn: Perseus:text:1999.02.0045
+  title: Pseudolus
+  author: T. Maccius Plautus
+documents_150:
+  urn: Perseus:text:1999.02.0046
+  title: Rudens
+  author: T. Maccius Plautus
+documents_151:
+  urn: Perseus:text:1999.02.0047
+  title: Stichus
+  author: T. Maccius Plautus
+documents_152:
+  urn: Perseus:text:1999.02.0048
+  title: Trinummus
+  author: T. Maccius Plautus
+documents_153:
+  urn: Perseus:text:1999.02.0049
+  title: Truculentus
+  author: T. Maccius Plautus
+documents_154:
+  urn: Perseus:text:1999.02.0053
+  title: Commentary on the Aeneid of Vergil
+  author: Maurus Servius Honoratus
+documents_155:
   urn: Perseus:text:1999.02.0055
-documents_003: 
-  title: Apocalypsis Johanni
-  author: Vulgate
+  title: Aeneid
+  author: P. Vergilius Maro
+documents_156:
+  urn: Perseus:text:1999.02.0056
+  title: Eclogues
+  author: P. Vergilius Maro
+documents_157:
+  urn: Perseus:text:1999.02.0059
+  title: Georgicon
+  author: P. Vergilius Maro
+documents_158:
   urn: Perseus:text:1999.02.0060
+  title: Latin Vulgate
+  author: Perseus:text:1999.02.0060
+documents_159:
+  urn: Perseus:text:1999.02.0061
+  title: De Vita Caesarum
+  author: C. Suetonius Tranquillus
+documents_160:
+  urn: Perseus:text:1999.02.0062
+  title: Satyrarum libri
+  author: Quintus Horatius Flaccus
+documents_161:
+  urn: Perseus:text:1999.02.0064
+  title: De Arte Poetica liber
+  author: Quintus Horatius Flaccus
+documents_162:
+  urn: Perseus:text:1999.02.0066
+  title: Perseus:text:1999.02.0066
+  author: Perseus:text:1999.02.0066
+documents_163:
+  urn: Perseus:text:1999.02.0068
+  title: Amores, Epistulae, Medicamina faciei femineae, Ars amatoria, Remedia amoris
+  author: P. Ovidius Naso
+documents_164:
+  urn: Perseus:text:1999.02.0070
+  title: Carmina Omnia
+  author: Sulpicia
+documents_165:
+  urn: Perseus:text:1999.02.0072
+  title: De Architectura
+  author: Vitruvius Pollio
+documents_166:
+  urn: Perseus:text:1999.02.0075
+  title: De Bello Civili
+  author: C. Julius Caesar
+documents_167:
+  urn: Perseus:text:1999.02.0077
+  title: Perseus:text:1999.02.0077
+  author: Perseus:text:1999.02.0077
+documents_168:
+  urn: Perseus:text:1999.02.0079
+  title: Perseus:text:1999.02.0079
+  author: Perseus:text:1999.02.0079
+documents_169:
+  urn: Perseus:text:1999.02.0084
+  title: Perseus:text:1999.02.0084
+  author: Perseus:text:1999.02.0084
+documents_170:
+  urn: Perseus:text:1999.02.0086
+  title: Adelphi
+  author: Publius Terentius Afer
+documents_171:
+  urn: Perseus:text:1999.02.0087
+  title: Andria
+  author: Publius Terentius Afer
+documents_172:
+  urn: Perseus:text:1999.02.0088
+  title: Eunuchus
+  author: Publius Terentius Afer
+documents_173:
+  urn: Perseus:text:1999.02.0089
+  title: Heautontimorumenos
+  author: Publius Terentius Afer
+documents_174:
+  urn: Perseus:text:1999.02.0090
+  title: Hecyra
+  author: Publius Terentius Afer
+documents_175:
+  urn: Perseus:text:1999.02.0091
+  title: Phormio
+  author: Publius Terentius Afer
+documents_176:
+  urn: Perseus:text:1999.02.0118
+  title: Fabulae Aesopiae
+  author: Phaedrus
+documents_177:
+  urn: Perseus:text:1999.02.0120
+  title: De Oratore
+  author: M. Tullius Cicero
+documents_178:
+  urn: Perseus:text:1999.02.0121
+  title: Consolatio Philosophiae
+  author: Ancius Manlius Severinus Boethius
+documents_179:
+  urn: Perseus:text:1999.02.0123
+  title: Title
+  author: Perseus:text:1999.02.0123
+documents_180:
+  urn: Perseus:text:1999.02.0125
+  title: The Jugurthine War
+  author: Sallust
+documents_181:
+  urn: Perseus:text:1999.02.0127
+  title: Res Gestae Divi Augusti
+  author: Caesar Augustus
+documents_182:
+  urn: Perseus:text:1999.02.0129
+  title: Washingtonii Vita
+  author: Francis Glass
+documents_183:
+  urn: Perseus:text:1999.02.0130
+  title: De Rerum Natura
+  author: Lucretius
+documents_184:
+  urn: Perseus:text:1999.02.0133
+  title: Pharsalia
+  author: M. Annaeus Lucanus
+documents_185:
+  urn: Perseus:text:1999.02.0135
+  title: Historiam ecclesiasticam gentis Anglorum
+  author: The Venerable Bede
+documents_186:
+  urn: Perseus:text:1999.02.0136
+  title: Vitae
+  author: Cornelius Nepos
+documents_187:
+  urn: Perseus:text:1999.02.0138
+  title: Naturalis Historia
+  author: Pliny the Elder
+documents_188:
+  urn: Perseus:text:1999.02.0139
+  title: Letters
+  author: Pliny the Younger
+documents_189:
+  urn: Perseus:text:1999.02.0141
+  title: Perseus:text:1999.02.0141
+  author: Perseus:text:1999.02.0141
+documents_190:
+  urn: Perseus:text:2007.01.0001
+  title: Perseus:text:2007.01.0001
+  author: Perseus:text:2007.01.0001
+documents_191:
+  urn: Perseus:text:2008.01.0002
+  title: Perseus:text:2008.01.0002
+  author: Perseus:text:2008.01.0002
