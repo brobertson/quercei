@@ -8,6 +8,7 @@ class CreateWords < ActiveRecord::Migration
 
       t.timestamps
     end
+      add_index :words, :document_urn
   end
 
   def self.down

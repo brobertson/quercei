@@ -9,9 +9,10 @@ def index
   @next_sentence_number = 1 + @sentence_number.to_i
   @previous_sentence_number = @sentence_number.to_i - 1 
   @document_urn = params[:document_urn] 
-  @words = Word.find(:all, :order => "number", :conditions => ["document_urn = ? and sentence = ?", @document_urn, @sentence_number])
-  @next_sentence_exists = Word.exists?(["document_urn = ? and sentence = ?", @document_urn, @next_sentence_number])
+  @subdoc = params[:subdoc]
+  @words = Word.find(:all, :order => "number", :conditions => ["document_urn = ? and sentence = ? and subdoc = ?", @document_urn, @sentence_number, @subdoc])
+  @next_sentence_exists = Word.exists?(["document_urn = ? and sentence = ? and subdoc = ?", @document_urn, @next_sentence_number, @subdoc])
   @previous_sentence_exists = (@sentence_number.to_i > 1)
-  @subdoc = @words.first(:subdoc)
+  #@subdoc = @words.first(:subdoc)
 end
 end

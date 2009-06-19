@@ -1,4 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
+
+  map.connect 'subdocs/list', :controller => "subdocs", :action => "list"
+
+  map.resources :subdocs
+
   map.resources :pages
 
   map.resources :treebanks
@@ -18,7 +23,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :session, :member => {:destroy => :get }
   map.choose 'choose', :controller => 'documents', :action => 'choose'
   map.choose 'dump', :controller => 'treebanks', :action => 'dumpToPerseus'
-  
+ 
  map.with_options :controller => 'info' do |info|
    info.about 'about', :action => 'about'
    info.download 'download', :action => 'download'
@@ -59,7 +64,8 @@ ActionController::Routing::Routes.draw do |map|
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
  map.connect '', :controller => "info", :action => "intro"
- 
+ map.connect 'subdocs/list', :controller => "subdocs", :action => "list" 
+
  map.static 'static/:permalink', :controller => 'pages', :action => 'show'
   # See how all your routes lay out with "rake routes"
 

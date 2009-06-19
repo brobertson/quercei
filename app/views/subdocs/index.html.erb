@@ -1,0 +1,24 @@
+<h1>Listing subdocs</h1>
+
+<table>
+  <tr>
+    <th>Label</th>
+    <th>Document</th>
+    <th>Description</th>
+  </tr>
+
+<% for subdoc in @subdocs %>
+  <tr>
+    <td><%=h subdoc.label %></td>
+    <td><%=h subdoc.document_urn %></td>
+    <td><%=h subdoc.description %></td>
+    <td><%= link_to 'Show', subdoc %></td>
+    <td><%= link_to 'Edit', edit_subdoc_path(subdoc) %></td>
+    <td><%= link_to 'Destroy', subdoc, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+ <%= will_paginate @subdocs %>
+<br />
+
+<%= link_to 'New subdoc', new_subdoc_path %>

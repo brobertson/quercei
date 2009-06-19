@@ -85,7 +85,7 @@ try {
    counter ++;
   }	
 
-alert("how long? " + completedWords.length);
+//alert("how long? " + completedWords.length);
 for (key = 0;  key <  completedWords.length; key ++) {
   showTextCompleted(completedWords[key]);
 }
@@ -124,7 +124,7 @@ window.onload=updateRepresentation();
 </script>
 <div id="main">
 <div id="text">
-<h3><span id="document_urn"><%= @document_urn %></span>  Sentence #<span id="sentence_number"><%= @sentence_number %></span></h3>
+<h3><span id="document_urn"><%= @document_urn %> <%= @subdoc %> </span>  Sentence #<span id="sentence_number"><%= @sentence_number %></span></h3>
 <p id="printVersion"> 
 
 <% for word in @words %>
@@ -146,17 +146,17 @@ remote_function (
 <%= drop_receiving_element word.id.to_s, :accept => "word", :update => "representation", :hoverclass => "hover", :url => {  :controller => "treebanks", :action => "addFromJS"}, :with => "'&relation=' + $F('relation') + '&head_id=' + element.id  + '&word_id=" + word.id.to_s + "&user_id=" + current_user.id.to_s + "&sentence=" + @sentence_number.to_s + "&document_urn=" + @document_urn  + "'", :complete => "updateText();"   %>
 
 <% end %>
-. <code>[<span id="completedWords"></span>/<span id="totalWords"></span>]</code>
+ <code>[<span id="completedWords"></span>/<span id="totalWords"></span>]</code>
 </p>
 
 <%= select_tag "relation", options_for_select(@tagset) %>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <code>
-<%= link_to_if @previous_sentence_exists, '&#8592;', :controller => "sentence", :document_urn => @document_urn, :sentence => @previous_sentence_number %>
+<%= link_to_if @previous_sentence_exists, '&#8592;', :controller => "sentence", :document_urn => @document_urn, :subdoc => @subdoc, :sentence => @previous_sentence_number %>
 </code>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <code>
-<%= link_to_if @next_sentence_exists, '&#8594;', :controller=>"sentence", :document_urn => @document_urn, :sentence => @next_sentence_number  %>
+<%= link_to_if @next_sentence_exists, '&#8594;', :controller=>"sentence", :document_urn => @document_urn, :sentence => @next_sentence_number, :subdoc => @subdoc  %>
 </code>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <code>

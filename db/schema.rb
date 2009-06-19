@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090614191551) do
+ActiveRecord::Schema.define(:version => 20090616205013) do
 
   create_table "documents", :force => true do |t|
     t.string   "urn"
@@ -25,6 +25,19 @@ ActiveRecord::Schema.define(:version => 20090614191551) do
     t.string   "content"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "subdocs", :force => true do |t|
+    t.string   "label"
+    t.integer  "document_id"
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "document_urn"
+    t.string   "field1"
+    t.string   "field2"
+    t.string   "value1"
+    t.string   "value2"
   end
 
   create_table "treebanks", :force => true do |t|
