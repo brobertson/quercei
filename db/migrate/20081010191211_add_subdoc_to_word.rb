@@ -1,6 +1,7 @@
 class AddSubdocToWord < ActiveRecord::Migration
   def self.up
     add_column :words, :subdoc, :string
+    add_index :words, :subdoc
   end
 
   def self.down

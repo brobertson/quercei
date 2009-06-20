@@ -1,0 +1,23 @@
+<h1>New subdoc</h1>
+
+<% form_for(@subdoc) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :label %><br />
+    <%= f.text_field :label %>
+  </p>
+  <p>
+    <%= f.label :document_id %><br />
+    <%= f.text_field :document_id %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', subdocs_path %>

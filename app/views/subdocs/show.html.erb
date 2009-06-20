@@ -1,0 +1,18 @@
+<p>
+  <b>Label:</b>
+  <%=h @subdoc.label %>
+</p>
+
+<p>
+  <b>Document:</b>
+  <%=h @subdoc.document_id %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @subdoc.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_subdoc_path(@subdoc) %> |
+<%= link_to 'Back', subdocs_path %>

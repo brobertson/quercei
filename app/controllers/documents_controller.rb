@@ -22,8 +22,8 @@ class DocumentsController < ApplicationController
   # GET /documents/1
   # GET /documents/1.xml
   def show
-    @document = Document.find(params[:id])
-
+#    @document = Document.find(params[:id])
+  @document = Document.paginate :page => params[:page]
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @document }

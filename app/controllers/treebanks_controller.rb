@@ -245,7 +245,7 @@ def listBankedWords
   def addFromJS
   bank = Treebank.find_or_create_by_user_id_and_word_id(params[:user_id],  params[:word_id])
   # Head cannot be the object of anything
-  if bank.word.number == 0 
+  if bank.word.number == -1 
    # flash.now[:error] = "Head is always the Head of another word"
     bank.destroy()
   else
