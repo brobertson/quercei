@@ -13,7 +13,7 @@ test:
   encoding: utf8 
   database: quercei_test
   username: root
-  password: proxen*s 
+  password: ********
   host: localhost
 
 production:
