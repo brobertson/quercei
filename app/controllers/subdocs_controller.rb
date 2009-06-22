@@ -88,7 +88,7 @@ class SubdocsController < ApplicationController
      format.html do
          render :layout => false
        end
-    format.xml  { render :xml => @subdocs }
+    format.xml  { render :layout => false  }
   end
  end
 

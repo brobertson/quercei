@@ -6,7 +6,7 @@
      <option value="<%= document.urn%>"><%= document.author %>, <%=h document.title %></option>
 <% end %>
 </select>
-<%= observe_form :document, :update => "ajaxWrapper",  :url => {:controller => "subdocs", :action => "list"}, :frequency => 0.5 %>
+<%= observe_form :document, :update => "ajaxWrapper",  :url => {:controller => "subdocs", :action => "list"}, :frequency => 5 %>
 <br/>
 
 <div id="ajaxWrapper">
@@ -16,4 +16,3 @@
 </form>
 <br/>
 <br/>
-</form>

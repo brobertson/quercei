@@ -1,0 +1,5 @@
+<select name="subdoc" id="subdoc">
+<% for subdoc in @subdocs %>
+<option value="<%=h subdoc.label %>"><%= subdoc.field1 %>: <%= subdoc.value1 %>, <%= subdoc.field2 %>: <%= subdoc.value2 %></option>
+<% end %>
+</select>

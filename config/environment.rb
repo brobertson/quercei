@@ -52,6 +52,8 @@ Rails::Initializer.run do |config|
     :secret      => 'd662e1670b7f09ca7ad5d17b71386683ea38c9206e98d746ff1d5a9de3ebfa1955c2875c41754c39a93b616cedf76f437649ea72ee318f9fea7541ebd2ec8f61'
   }
   config.gem "RedCloth"
+  config.gem "mysql"
+  config.gem "fastercsv"
   config.gem "mislav-will_paginate", :version => ">= 2.3.5", :lib => "will_paginate", :source => 'http://gems.github.com'
   config.gem "sqlite3-ruby", :lib => "sqlite3"
   # Use the database for sessions instead of the cookie-based default,
