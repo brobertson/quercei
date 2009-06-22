@@ -1,18 +1,16 @@
 <h2>Select Text To Edit</h2>
-<form id="document" action="sentence" method="post">
+<% form_tag 'sentence', :id => "document" do -%>
 <input type="hidden" id="sentence" name="sentence" value="0"/> 
-<select name="document_urn">
+<select id="document_urn" name="document_urn">
 <% for document in @documents %>
      <option value="<%= document.urn%>"><%= document.author %>, <%=h document.title %></option>
 <% end %>
 </select>
-<%= observe_form :document, :update => "ajaxWrapper",  :url => {:controller => "subdocs", :action => "list"}, :frequency => 5 %>
+<%= observe_field :document_urn, :update => "ajaxWrapper",  :url => {:controller => "subdocs", :action => "list"}, :with => "'document_urn=' +value", :frequency => 1 -%>
 <br/>
-
-<div id="ajaxWrapper">
-</div>
-
+<div id="ajaxWrapper"/>
 <%= submit_tag 'Go' %>
-</form>
+<% end -%>
+
 <br/>
 <br/>

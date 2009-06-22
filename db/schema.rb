@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090616205013) do
+ActiveRecord::Schema.define(:version => 20090620062548) do
 
   create_table "documents", :force => true do |t|
     t.string   "urn"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(:version => 20090616205013) do
   create_table "pages", :force => true do |t|
     t.string   "name"
     t.string   "permalink"
-    t.string   "content"
+    t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -39,6 +39,9 @@ ActiveRecord::Schema.define(:version => 20090616205013) do
     t.string   "value1"
     t.string   "value2"
   end
+
+  add_index "subdocs", ["document_urn"], :name => "index_subdocs_on_document_urn"
+  add_index "subdocs", ["label"], :name => "index_subdocs_on_label"
 
   create_table "treebanks", :force => true do |t|
     t.integer  "word_id"
@@ -80,5 +83,8 @@ ActiveRecord::Schema.define(:version => 20090616205013) do
     t.integer  "perseusId"
     t.integer  "lang_id"
   end
+
+  add_index "words", ["document_urn"], :name => "index_words_on_document_urn"
+  add_index "words", ["subdoc"], :name => "index_words_on_subdoc"
 
 end
