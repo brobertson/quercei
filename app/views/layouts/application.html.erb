@@ -9,6 +9,7 @@
    <%= yield :head %>
  </head>
  <body>
+  <div id="whole">
   <div id="container">
    <div id="header"><a href="/"><i>Quercei:</i>
   <br/>
@@ -26,6 +27,7 @@
    | <%= link_to "sign up", :controller => "users", :action => "new" %> 
   <% end %> 
 | <%= link_to "Introduction", :controller => "info", :action => "intro" %> | <%= link_to "development", :controller => "static", :action => "development" %> |  <%= link_to "contact", :controller => "static", :action => "contact" %></div>
+</div><!-- end 'preamble' -->
 <p><span id="flasherror"><%= flash[:error] %></span><span id="flashnotice"><%= flash[:notice] %></span></p>
    <%= @content_for_layout %>
 

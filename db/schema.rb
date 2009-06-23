@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090620062548) do
+ActiveRecord::Schema.define(:version => 20081115181851) do
 
   create_table "documents", :force => true do |t|
     t.string   "urn"
@@ -55,6 +55,7 @@ ActiveRecord::Schema.define(:version => 20090620062548) do
     t.datetime "updated_at"
     t.integer  "sentence"
     t.string   "document_urn"
+    t.string   "subdoc"
   end
 
   create_table "users", :force => true do |t|

@@ -152,7 +152,7 @@ def renderSentenceSVG
    </svg>
 END
  else
- @sentenceTree = Treebank.find(:all, :order => "word_id", :conditions => "sentence='"+params[:sentence] + "' and user_id = '" + params[:user_id].to_s + "' and document_urn= '" + params[:document_urn].to_s + "'")
+ @sentenceTree = Treebank.find(:all, :order => "word_id", :conditions => "sentence='"+params[:sentence] + "' and user_id = '" + params[:user_id].to_s + "' and document_urn= '" + params[:document_urn].to_s + "' and subdoc = '" + params[:subdoc].to_s + "'")
 
 #sort in sentence order so that the graph 'reads' from left to right
 @sentenceTree.sort! { |a,b| a.word.number <=> b.word.number }
@@ -161,9 +161,8 @@ mystring= <<DOC
 digraph G {size="5,3.5" node [fontname="Monaco", fontsize=8, margin="0.01, 0.01", color=blue, width=0.1, height=0.1]; node0[ label="this is a node with a very long name"]; node0 -> node1; node1 [style=filled]; node2 [style=filled, fillcolor=red]; node2 -> node0; }
 DOC
 
-dotDescription = <<DOC
- digraph G {size="9,5"  node [fontsize=8, fontname="Georgia", margin="0.005, 0.005", color=blue, width=0.1, height=0.1];
-DOC
+dotDescription = 'digraph G {size="9,5"  node [fontsize=8, fontname="Georgia", margin="0.005, 0.005", color=blue, width=0.1, height=0.1];' 
+#dotDescription= 'digraph G {size="' + params[:width] + "," + params[:height] + '"  node [fontsize=8, fontname="Georgia", margin="0.005, 0.005", color=blue, width=0.1, height=0.1];'
 for treebank in @sentenceTree
   dotDescription +=  treebank.word_id.to_s + '[label="' + treebank.word.form + '", shape=plaintext]; ' + treebank.head_id.to_s + ' -> ' +  treebank.word_id.to_s  + '[label="' + treebank.relation + '", ' + 'fontname="Arial", labelfloat="true", arrowsize=".5", fontsize="6", fontcolor="#874C3B", color="gray"]; ' 
 unless Treebank.exists?(:word_id => treebank.head_id, :user_id => params[:user_id]) 
@@ -199,7 +198,7 @@ parse_svg.root.each_element_with_attribute('class', 'graph') {|e|
   }
 }
 @gvsvg = parse_svg.to_s
-@svg_width=parse_svg.root.attributes["width"].gsub(/pt$/,'').to_i
+@svg_width=params[:width]#parse_svg.root.attributes["width"].gsub(/pt$/,'').to_i
 @svg_height=parse_svg.root.attributes["height"].gsub(/pt$/,'').to_i
      respond_to do |format|
        format.html do
@@ -220,7 +219,7 @@ def listBankedWords
  
   def clearSentence
    render :layout => false
-    Treebank.destroy_all "sentence='"+params[:sentence] + "'and user_id = '" + params[:user_id].to_s + "'"
+    Treebank.destroy_all "document_urn='" + params[:document_urn] + "' and subdoc ='" + params[:subdoc] + "' and sentence='"+params[:sentence] + "'and user_id = '" + params[:user_id].to_s + "'"
      @message = "Deleted"
   end
 
@@ -253,6 +252,7 @@ def listBankedWords
    bank.head_id = params[:head_id]
    bank.sentence = params[:sentence]
    bank.document_urn = params[:document_urn]
+   bank.subdoc = params[:subdoc]
    bank.save()
    # if the reverse relationship exists in the database, then delete it because it is not
    # possible for words to be in reciprocal relationship.
@@ -270,6 +270,7 @@ def listBankedWords
       bank.relation = params[:relation]
       bank.head_id = params[:head_id]
       bank.sentence = params[:sentence]
+      bank.subdoc = params[:subdoc]
       bank.save()
    #HEAD cannot be the subject
    

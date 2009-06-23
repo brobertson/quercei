@@ -2,6 +2,7 @@
 <% form_tag 'sentence', :id => "document" do -%>
 <input type="hidden" id="sentence" name="sentence" value="0"/> 
 <select id="document_urn" name="document_urn">
+    <option selected="selected" value="choose">==Select Work and Subdoc==</option>
 <% for document in @documents %>
      <option value="<%= document.urn%>"><%= document.author %>, <%=h document.title %></option>
 <% end %>

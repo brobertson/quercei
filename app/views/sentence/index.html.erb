@@ -7,13 +7,25 @@ function updateRepresentation() { <%= remote_function(
        :user_id=>current_user.id,
        :sentence=>@sentence_number,
        :graphType => "dot", 
-       :document_urn =>@document_urn}, 
-  :complete => "updateText();"
+       :document_urn =>@document_urn,
+       :subdoc =>@subdoc
+       }, 
+  :complete => "updateText();",
+  :with =>  "'width=' + windowWidthInches() + '&height=' + windowHeightInches()"
 
   )
 %>
 }
 
+function windowWidthInches() {
+return document.viewport.getWidth() / dpi();
+}
+function windowHeightInches() {
+return document.viewport.getHeight() / dpi();
+}
+function dpi() {
+return 96;
+}
 function highlightSVG(word_number) {
   element = document.getElementById("SVG_" + word_number);
   if (element != null) {element.setAttribute("fill", "red");}
@@ -143,7 +155,7 @@ remote_function (
 </script>
 <span class="word" onmouseover="highlightSVG(<%=h word.id %>);" onmouseout="deHighlightSVG(<%=h word.id %>);" id="<%=h word.id %>"><%=h word.form %></span><span class="space"> </span>
 <%= draggable_element(word.id.to_s, :revert => true) %>
-<%= drop_receiving_element word.id.to_s, :accept => "word", :update => "representation", :hoverclass => "hover", :url => {  :controller => "treebanks", :action => "addFromJS"}, :with => "'&relation=' + $F('relation') + '&head_id=' + element.id  + '&word_id=" + word.id.to_s + "&user_id=" + current_user.id.to_s + "&sentence=" + @sentence_number.to_s + "&document_urn=" + @document_urn  + "'", :complete => "updateText();"   %>
+<%= drop_receiving_element word.id.to_s, :accept => "word", :update => "representation", :hoverclass => "hover", :url => {  :controller => "treebanks", :action => "addFromJS"}, :with => "'&relation=' + $F('relation') + '&head_id=' + element.id  + '&word_id=" + word.id.to_s + "&user_id=" + current_user.id.to_s + "&sentence=" + @sentence_number.to_s + "&document_urn=" + @document_urn  + "&subdoc=" + @subdoc + "'", :complete => "updateText();"   %>
 
 <% end %>
  <code>[<span id="completedWords"></span>/<span id="totalWords"></span>]</code>
@@ -165,9 +177,10 @@ remote_function (
      :controller=>"treebanks",
      :action=>"clearSentence",
      :user_id=> current_user.id,
-     :sentence=>@sentence_number},
+     :sentence=>@sentence_number,
+     :document_urn=>@document_urn, 
+     :subdoc=>@subdoc},
      :update => "representation",
-     :confirm => "Do you want to undo all work on this sentence?",
      :complete => "updateText();"
 %>
 </code>
