@@ -16,7 +16,14 @@ function updateRepresentation() { <%= remote_function(
   )
 %>
 }
-
+function toggleHeader(event) {
+ if ($('header').style.display=='none') {
+   $('header').style.display='block'; 
+   }
+ else {
+  $('header').style.display = 'none';
+ }
+}
 function windowWidthInches() {
 return document.viewport.getWidth() / dpi();
 }
@@ -171,8 +178,8 @@ remote_function (
 <%= link_to_if @next_sentence_exists, '&#8594;', :controller=>"sentence", :document_urn => @document_urn, :sentence => @next_sentence_number, :subdoc => @subdoc  %>
 </code>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<!--span onmouseup="$('header').style.display='none'" style="cursor: hand;">&uarr;</span-->
-<code>
+<span onmouseup="toggleHeader(event);"  style="cursor: pointer;">&#8597;</span>
+&nbsp;&nbsp;<code>
 <%= link_to_remote "Clear", 
    :url=> {
      :controller=>"treebanks",
