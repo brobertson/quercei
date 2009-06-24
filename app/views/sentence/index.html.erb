@@ -148,7 +148,7 @@ function deleteFromSVG<%= word.id.to_s %>() {
 remote_function (
  :update => "representation",  
  :url => {  :controller => "treebanks", :action => "deleteByWordId"}, 
- :with => "'&word_id=" + word.id.to_s + "&user_id=" + current_user.id.to_s + "&document_urn=" + word.document_urn.to_s + "&sentence=" + @sentence_number.to_s + "'", :complete => "updateText();")   %>
+ :with => "'&word_id=" + word.id.to_s + "&user_id=" + current_user.id.to_s + "&document_urn=" + word.document_urn.to_s + "&subdoc=" + @subdoc + "&sentence=" + @sentence_number.to_s + "'", :complete => "updateText();")   %>
  deHighlightText(<%=h word.id %>);
 }
 ]]>
@@ -171,6 +171,7 @@ remote_function (
 <%= link_to_if @next_sentence_exists, '&#8594;', :controller=>"sentence", :document_urn => @document_urn, :sentence => @next_sentence_number, :subdoc => @subdoc  %>
 </code>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--span onmouseup="$('header').style.display='none'" style="cursor: hand;">&uarr;</span-->
 <code>
 <%= link_to_remote "Clear", 
    :url=> {

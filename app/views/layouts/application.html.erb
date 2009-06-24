@@ -11,11 +11,10 @@
  <body>
   <div id="whole">
   <div id="container">
-   <div id="header"><a href="/"><i>Quercei:</i>
+   <div display="block" id="header"><a href="/"><i>Quercei:</i>
   <br/>
 <div class="subtitle">A Framework for Treebank Editing</div>
 </a>
-</div>
 <div id="menu">
   <% if logged_in? %>
     <%= link_to "logout", destroy_session_url %>
@@ -27,8 +26,9 @@
    | <%= link_to "sign up", :controller => "users", :action => "new" %> 
   <% end %> 
 | <%= link_to "Introduction", :controller => "info", :action => "intro" %> | <%= link_to "development", :controller => "static", :action => "development" %> |  <%= link_to "contact", :controller => "static", :action => "contact" %></div>
-</div><!-- end 'preamble' -->
+</div>
 <p><span id="flasherror"><%= flash[:error] %></span><span id="flashnotice"><%= flash[:notice] %></span></p>
+</div>
    <%= @content_for_layout %>
 
 <div id="footer">Copyright ©2009 Bruce G. Robertson
