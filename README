@@ -1,12 +1,20 @@
 == Quercei ==
 
-+ Install +
-If you want to add more texts to the samples, issue the following
-shell command:
-xsltproc xslt/perseus_tbank_to_yml.xsl TREEBANK_FILE >> test/fixtures/words.yml
-In order to access the sentences of this document, you will need
-to add it by hand to the 'Documents' database.
++ Install Using mysqlite3 +
 
+This is a suitable and preferred technique if there exists a XML file for your
+text.
+
+To add this text to the samples, issue the following
+shell commands:
+xsltproc xslt/perseus_tbank_to_yml.xsl TREEBANK_FILE >> test/fixtures/words.yml
+xsltproc xslt/perseus_tbank_to_subdoc_yml.xsl TREEBANK_FILE >> text/fixtures/subdocs.yml
+xsltproc xslt/perseus_tbank_to_document.xsl TREEBANK_FILE >> test/fixtures/documents.yml
+
+(If you wish to replace the samples, use '>' instead of '>>' above.)
+
+You might want to edit the results of the last command because sometimes the author and title of a work is not properly reported. Open the test/fixtures/documents.yml file with your editor and see correct any omissions.
+ 
 The following instructions pertain in all cases:
 
 From within the 'quercei' directory, build the database schema and 
@@ -16,6 +24,11 @@ rake db:fixtures:load
 
 Then start the server with:
 script/server
+
+If you have removed items from your .yml files and want those to be removed
+from quercei, issue these commands:
+rake db:reset
+rake db:fixtures:load
 
 You may be required to install 'gems'. The following command will 
 do this:
