@@ -1,0 +1,176 @@
+    @prefix fn: <http://www.w3.org/2005/xpath-functions> .
+    @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+    @prefix tbank: <http://nlp.perseus.tufts.edu/syntax/treebank/1.5> .
+    @prefix tbankRDF: <http://nlp.perseus.tufts.edu/syntax/treebank/1.5/RDF#> .
+    @prefix AandG: <http://heml.mta.ca/allanAndGreenough#> .
+
+   @prefix log: <http://www.w3.org/2000/10/swap/log#> .
+
+# Subject
+@forAll :x, :y.
+{ :x tbankRDF:SBJ :y.
+  :x  tbankRDF:grammar tbankRDF:nominative . 
+ } 
+
+=> { AandG:271 :example :x } .
+
+# Indirect Object
+{?d tbankRDF:grammar tbankRDF:dative.
+ ?d tbankRDF:OBJ ?x.
+}
+=> {AandG:274 :example ?d} .
+
+# Subjects with coordinators
+@forAll :x, :y.
+{ :x tbankRDF:SBJ_CO :y.
+  :x  tbankRDF:grammar tbankRDF:nominative . 
+ } 
+
+=> { AandG:271CO :example :x } .
+
+# Direct Object
+{?d tbankRDF:grammar tbankRDF:accusative.
+ ?d tbankRDF:OBJ ?x.
+}
+=> {AandG:274Acc :example ?d} .
+
+# Agreeing nouns including genitives although it should not
+{?d tbankRDF:grammar tbankRDF:noun.
+ ?x tbankRDF:grammar tbankRDF:noun.
+ ?d tbankRDF:ATR ?x.
+}
+=> {AandG:281 :example ?d} .
+
+# Predicate as Noun
+{?d tbankRDF:grammar tbankRDF:noun.
+ ?x tbankRDF:grammar tbankRDF:verb.
+ ?d tbankRDF:PNOM ?x.
+}
+=> {AandG:272 :example ?d} .
+
+# Predicate as Adjective
+{?d tbankRDF:grammar tbankRDF:adjective.
+ ?x tbankRDF:grammar tbankRDF:verb.
+ ?d tbankRDF:PNOM ?x.
+}
+=> {AandG:272ADJ :example ?d} .
+
+
+# Agreeing Adjective
+{?d tbankRDF:grammar tbankRDF:adjective.
+ ?x tbankRDF:grammar tbankRDF:noun.
+ ?d tbankRDF:ATR ?x.
+}
+=> {AandG:286 :example ?d} .
+
+# Agreeing Participle
+{?d tbankRDF:grammar tbankRDF:participle.
+ ?x tbankRDF:grammar tbankRDF:noun.
+ ?d tbankRDF:ATR ?x.
+}
+=> {AandG:286PART :example ?d} .
+
+# Accusative plus infinitive construction
+{?d tbankRDF:grammar tbankRDF:accusative.
+ ?x tbankRDF:grammar tbankRDF:infinitive.
+ ?d tbankRDF:SBJ ?x.
+}
+=> {AandG:397e :example ?d} .
+
+# Ablative absolutes with a participle
+{?d tbankRDF:grammar tbankRDF:ablative.
+ ?x tbankRDF:grammar tbankRDF:participle.
+ ?d tbankRDF:SBJ ?x.
+}
+=> {AandG:419 :example ?d} .
+
+# Participles are adverbial
+{?d tbankRDF:grammar tbankRDF:participle.
+ ?x tbankRDF:grammar tbankRDF:verb.
+ ?d tbankRDF:ADV ?x.
+}
+=> {AandG:488 :example ?d} .
+
+# Possesive Partitive Objective Genitive
+{?d tbankRDF:grammar tbankRDF:genitive.
+ ?x tbankRDF:grammar tbankRDF:noun.
+ ?d tbankRDF:ATR ?x.
+}
+=> {AandG:343 :example ?d} .
+
+# Ablative absolutes without a participle 
+{?d tbankRDF:grammar tbankRDF:ablative.
+ ?x tbankRDF:grammar tbankRDF:ablative.
+ ?d tbankRDF:ATV ?x.
+}
+=> {AandG:419a :example ?d} .
+
+# Adjective Pronouns All Demonstratives
+{?d tbankRDF:lemma "hic1".
+ ?x tbankRDF:grammar tbankRDF:noun.
+ ?d tbankRDF:ATR ?x.
+}
+=> {AandG:296DEM :example ?d} .
+
+{?d tbankRDF:lemma "ille1".
+ ?x tbankRDF:grammar tbankRDF:noun.
+ ?d tbankRDF:ATR ?x.
+}
+=> {AandG:296DEM :example ?d} .
+
+
+{?d tbankRDF:lemma "iste1".
+ ?x tbankRDF:grammar tbankRDF:noun.
+ ?d tbankRDF:ATR ?x.
+}
+=> {AandG:296DEM :example ?d} .
+
+{?d tbankRDF:lemma "is1".
+ ?x tbankRDF:grammar tbankRDF:noun.
+ ?d tbankRDF:ATR ?x.
+}
+=> {AandG:296DEM :example ?d} .
+
+# Relative Pronouns
+{?d tbankRDF:lemma "qui1".
+ ?x tbankRDF:grammar tbankRDF:noun.
+ ?d tbankRDF:ATR ?x.
+}
+=> {AandG:305 :example ?d} .
+
+# Gerund as a verb
+{?d tbankRDF:grammar tbankRDF:gerund.
+ ?x tbankRDF:grammar tbankRDF:verb.
+ ?d tbankRDF:ADV ?x.
+}
+=> {AandG:502 :example ?d} .
+
+{?d tbankRDF:grammar tbankRDF:gerund.
+ ?x tbankRDF:grammar tbankRDF:adjective.
+ ?d tbankRDF:ADV ?x.
+}
+=> {AandG:502 :example ?d} .
+
+# Gerund as a noun
+{?d tbankRDF:grammar tbankRDF:gerund.
+ ?x tbankRDF:grammar tbankRDF:verb.
+ ?d tbankRDF:OBJ ?x.
+}
+=> {AandG:502OBJ :example ?d} .
+
+# Infinitive as noun
+{?d tbankRDF:grammar tbankRDF:infinitive.
+ ?x tbankRDF:grammar tbankRDF:verb.
+ ?d tbankRDF:SBJ ?x.
+}
+=> {AandG:452 :example ?d} .
+
+# Complementary Infinitive
+{?d tbankRDF:grammar tbankRDF:infinitive.
+ ?x tbankRDF:grammar tbankRDF:verb.
+ ?d tbankRDF:OBJ ?x.
+}
+=> {AandG:456 :example ?d} .
+
+
