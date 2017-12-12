@@ -274,7 +274,7 @@ def listBankedWords
       bank.save()
    #HEAD cannot be the subject
    
-   #Reciprocal relationships are not possilbe in these graphs. So if there exists a 
+   #Reciprocal relationships are not possible in these graphs. So if there exists a 
    #reverse relationship, we delete it.
    reverse = Treebank.find_by_word_id_and_head_id(params[:head_id], params[:word_id])
    if reverse != nil 
